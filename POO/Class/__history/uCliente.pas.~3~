@@ -1,0 +1,14 @@
+unit uCliente;
+
+interface
+
+type
+  TCliente = class
+    fNomeCliente : String;
+    fTelefone : String;
+    fDataNascimento : TDate;
+  end;
+
+implementation
+
+end.

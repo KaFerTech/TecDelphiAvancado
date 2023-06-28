@@ -1,0 +1,227 @@
+object frmVendas: TfrmVendas
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'Vendas'
+  ClientHeight = 284
+  ClientWidth = 610
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object gbDadosVenda: TGroupBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 604
+    Height = 110
+    Align = alTop
+    Caption = 'Dados da Venda'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    object gbProduto: TGroupBox
+      Left = 3
+      Top = 18
+      Width = 382
+      Height = 43
+      Caption = 'Produto'
+      ParentBackground = False
+      TabOrder = 0
+      object edtProduto: TEdit
+        Left = 3
+        Top = 16
+        Width = 376
+        Height = 24
+        TabOrder = 0
+      end
+    end
+    object gbVlrUni: TGroupBox
+      Left = 391
+      Top = 18
+      Width = 146
+      Height = 43
+      Caption = 'Valor Unit'#225'rio'
+      TabOrder = 1
+      object edtVlrUni: TEdit
+        Left = 3
+        Top = 16
+        Width = 140
+        Height = 24
+        TabOrder = 0
+      end
+    end
+    object gbQtde: TGroupBox
+      Left = 543
+      Top = 18
+      Width = 58
+      Height = 43
+      Caption = 'Qtde'
+      TabOrder = 2
+      object edtQtde: TEdit
+        Left = 3
+        Top = 16
+        Width = 52
+        Height = 24
+        Alignment = taCenter
+        TabOrder = 0
+        Text = '1'
+      end
+    end
+    object GroupBox1: TGroupBox
+      Left = 3
+      Top = 64
+      Width = 237
+      Height = 43
+      Caption = 'Cliente'
+      ParentBackground = False
+      TabOrder = 3
+      object edtNomeCliente: TEdit
+        Left = 3
+        Top = 16
+        Width = 231
+        Height = 24
+        TabOrder = 0
+      end
+    end
+    object GroupBox2: TGroupBox
+      Left = 246
+      Top = 64
+      Width = 146
+      Height = 43
+      Caption = 'Telefone'
+      TabOrder = 4
+      object edtTelefoneCliente: TEdit
+        Left = 3
+        Top = 16
+        Width = 140
+        Height = 24
+        TabOrder = 0
+      end
+    end
+    object GroupBox3: TGroupBox
+      Left = 398
+      Top = 64
+      Width = 146
+      Height = 43
+      Caption = 'Data Nascimento'
+      TabOrder = 5
+      object edtDataNascimentoCliente: TEdit
+        Left = 3
+        Top = 16
+        Width = 140
+        Height = 24
+        TabOrder = 0
+      end
+    end
+    object btnExemplo: TButton
+      Left = 550
+      Top = 75
+      Width = 48
+      Height = 25
+      Caption = 'Ex'
+      TabOrder = 6
+      OnClick = btnExemploClick
+    end
+  end
+  object dbgProdutos: TDBGrid
+    AlignWithMargins = True
+    Left = 3
+    Top = 119
+    Width = 604
+    Height = 121
+    Align = alClient
+    DataSource = dsVendas
+    DrawingStyle = gdsGradient
+    TabOrder = 1
+    TitleFont.Charset = ANSI_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Produto'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ValorUnitario'
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Qtde'
+        Title.Alignment = taCenter
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ValorTotalItem'
+        Visible = True
+      end>
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 243
+    Width = 610
+    Height = 41
+    Align = alBottom
+    TabOrder = 2
+    ExplicitLeft = 136
+    ExplicitTop = 262
+    ExplicitWidth = 185
+    object btnGerarVenda: TSpeedButton
+      AlignWithMargins = True
+      Left = 495
+      Top = 4
+      Width = 111
+      Height = 33
+      Align = alRight
+      Caption = 'Gerar Venda'
+      Enabled = False
+      Flat = True
+      ExplicitLeft = 504
+      ExplicitTop = 1
+      ExplicitHeight = 39
+    end
+    object btnAdicionarProduto: TSpeedButton
+      Left = 370
+      Top = 1
+      Width = 122
+      Height = 39
+      Align = alRight
+      Caption = 'Adicionar Produto'
+      Flat = True
+      OnClick = btnAdicionarProdutoClick
+      ExplicitLeft = 376
+    end
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 3
+    Top = 251
+    Width = 240
+    Height = 25
+    DataSource = dsVendas
+    TabOrder = 3
+  end
+  object dsVendas: TDataSource
+    DataSet = dmVendas.cdsVendas
+    Left = 536
+    Top = 184
+  end
+end

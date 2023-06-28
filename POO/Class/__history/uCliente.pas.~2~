@@ -1,0 +1,14 @@
+unit uCliente;
+
+interface
+
+type
+  TCliente = class
+
+
+
+  end;
+
+implementation
+
+end.

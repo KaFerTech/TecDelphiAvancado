@@ -1,0 +1,5 @@
+object dmVendas: TdmVendas
+  OldCreateOrder = False
+  Height = 230
+  Width = 351
+end

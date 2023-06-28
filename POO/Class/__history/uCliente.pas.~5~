@@ -1,0 +1,16 @@
+unit uCliente;
+
+interface
+
+type
+  TCliente = class
+  Private
+    fNomeCliente : String;
+    fTelefone : String;
+    fDataNascimento : TDate;
+  protected
+  end;
+
+implementation
+
+end.
