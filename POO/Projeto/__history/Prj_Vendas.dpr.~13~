@@ -11,7 +11,7 @@ uses
   uPessoaFisica in '..\Class\uPessoaFisica.pas',
   uPessoaJuridica in '..\Class\uPessoaJuridica.pas',
   uMascarasDocumento in 'uMascarasDocumento.pas',
-  uViewPessoa in '..\View\uViewPessoa.pas' {frmPessoa};
+  uViewPessoa in '..\View\uViewPessoa.pas' {Form1};
 
 {$R *.res}
 

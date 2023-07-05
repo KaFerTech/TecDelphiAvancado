@@ -115,7 +115,7 @@
         <DCCReference Include="..\Class\uPessoaJuridica.pas"/>
         <DCCReference Include="uMascarasDocumento.pas"/>
         <DCCReference Include="..\View\uViewPessoa.pas">
-            <Form>Form1</Form>
+            <Form>frmPessoa</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

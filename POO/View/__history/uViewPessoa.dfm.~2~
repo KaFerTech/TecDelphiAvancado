@@ -1,7 +1,7 @@
-object frmPessoa: TfrmPessoa
+object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Pessoa'
+  Caption = 'Form1'
   ClientHeight = 192
   ClientWidth = 291
   Color = clBtnFace
