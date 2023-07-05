@@ -1,0 +1,34 @@
+unit uCliente;
+
+interface
+
+type
+  TCliente = class
+  Private
+    fNomeCliente: String;
+    fTelefone: String;
+    fDataNascimento: TDate;
+    function getNomeCliente: String;
+    procedure setNomeCliente(const Value: String);
+  public
+    // fEndereco : String;
+    property NomeCliente: String read getNomeCliente write setNomeCliente;
+    property Telefone: String read fTelefone write fTelefone;
+    property DataNascimento: TDate read fDataNascimento write fDataNascimento;
+  end;
+
+implementation
+
+{ TCliente }
+
+function TCliente.getNomeCliente: String;
+begin
+
+end;
+
+procedure TCliente.setNomeCliente(const Value: String);
+begin
+
+end;
+
+end.

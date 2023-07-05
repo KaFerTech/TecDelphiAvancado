@@ -4,7 +4,9 @@ uses
   Vcl.Forms,
   uViewVendas in '..\View\uViewVendas.pas' {frmVendas},
   unDmVendas in '..\Data Module\unDmVendas.pas' {dmVendas: TDataModule},
-  uCliente in '..\Class\uCliente.pas';
+  uCliente in '..\Class\uCliente.pas',
+  uItensVenda in '..\Class\uItensVenda.pas',
+  uBaseClass in '..\Class\uBaseClass.pas';
 
 {$R *.res}
 

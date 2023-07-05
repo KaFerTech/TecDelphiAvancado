@@ -7,7 +7,7 @@ uses
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Buttons, Vcl.ExtCtrls,
   Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Datasnap.DBClient, unDmVendas,
-  Vcl.DBCtrls;
+  Vcl.DBCtrls, uItensVenda;
 
 type
   TfrmVendas = class(TForm)
@@ -24,11 +24,11 @@ type
     btnAdicionarProduto: TSpeedButton;
     dsVendas: TDataSource;
     DBNavigator1: TDBNavigator;
-    GroupBox1: TGroupBox;
+    gbCliente: TGroupBox;
     edtNomeCliente: TEdit;
-    GroupBox2: TGroupBox;
+    gbTelefone: TGroupBox;
     edtTelefoneCliente: TEdit;
-    GroupBox3: TGroupBox;
+    gbDtNascimento: TGroupBox;
     edtDataNascimentoCliente: TEdit;
     btnExemplo: TButton;
     procedure btnAdicionarProdutoClick(Sender: TObject);
@@ -65,18 +65,11 @@ var
   vCliente: TCliente;
 begin
   vCliente := TCliente.Create;
-  vCliente.fNomeCliente := edtNomeCliente.Text;
-  vCliente.fTelefone := edtTelefoneCliente.Text;
-  vCliente.fDataNascimento := StrToDate(edtDataNascimentoCliente.Text);
-  vCliente.fEndereco := 'Avenida Teste, 256';
+  vCliente.NomeCliente := edtNomeCliente.Text;
+  vCliente.Telefone := edtTelefoneCliente.Text;
+  vCliente.DataNascimento := StrToDate(edtDataNascimentoCliente.Text);
 
-//  vCliente.fNomeCliente := 'Jose da silva';
-//  vCliente.fTelefone := '41 9 8888 7777';
-//  vCliente.fDataNascimento := now;
-
-  ShowMessage('Nome do Cliente: ' + vCliente.fNomeCliente + sLineBreak +
-              'Telefone do Cliente: ' + vCliente.fTelefone + sLineBreak +
-              'Data de Nascimento: ' + DateToStr(vCliente.fDataNascimento));
+  ShowMessage(vCliente.DadosCompletos);
 
 end;
 
@@ -93,36 +86,46 @@ end;
 
 procedure TfrmVendas.validarItens;
 begin
-  if trim(edtProduto.Text) = EmptyStr then
-  begin
-    ShowMessage('O campo Produto é obrigatório.');
-    edtProduto.SetFocus;
-    Abort;
-  end;
-
-  if StrToFloatDef(edtVlrUni.Text, 0) = 0 then
-  begin
-    ShowMessage('O campo Valor Unitário é obrigatório.');
-    edtVlrUni.SetFocus;
-    Abort;
-  end;
-
-  if StrToIntDef(edtQtde.Text, 0) = 0 then
-  begin
-    ShowMessage('O campo Qtde é obrigatório.');
-    edtQtde.SetFocus;
-    Abort;
-  end;
+//  if trim(edtProduto.Text) = EmptyStr then
+//  begin
+//    ShowMessage('O campo Produto é obrigatório.');
+//    edtProduto.SetFocus;
+//    Abort;
+//  end;
+//
+//  if StrToFloatDef(edtVlrUni.Text, 0) = 0 then
+//  begin
+//    ShowMessage('O campo Valor Unitário é obrigatório.');
+//    edtVlrUni.SetFocus;
+//    Abort;
+//  end;
+//
+//  if StrToIntDef(edtQtde.Text, 0) = 0 then
+//  begin
+//    ShowMessage('O campo Qtde é obrigatório.');
+//    edtQtde.SetFocus;
+//    Abort;
+//  end;
 
 end;
 
 procedure TfrmVendas.AdicionarItem;
+var
+  vItemVenda : TItemVenda;
 begin
-  dmVendas.cdsVendas.AppendRecord([
-    edtProduto.Text,
-    StrToCurrDef(edtVlrUni.Text, 0),
-    StrToIntDef(edtQtde.Text, 1)
-    ]);
+  vItemVenda := TItemVenda.Create;
+  vItemVenda.Produto := Trim(edtProduto.Text);
+  vItemVenda.VlrUni := StrToCurrDef(edtVlrUni.Text, 0);
+  vItemVenda.Qtde := StrToIntDef(edtQtde.Text, 1);
+
+  dmVendas.cdsVendas.AppendRecord([vItemVenda.Produto, vItemVenda.VlrUni, vItemVenda.Qtde]);
+
+
+//  dmVendas.cdsVendas.AppendRecord([
+//    edtProduto.Text,
+//    StrToCurrDef(edtVlrUni.Text, 0),
+//    StrToIntDef(edtQtde.Text, 1)
+//    ]);
 
   // dmVendas.cdsVendas.Append;
   // dmVendas.cdsVendasProduto.AsString := edtProduto.Text;

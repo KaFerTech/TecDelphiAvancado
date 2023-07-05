@@ -1,0 +1,27 @@
+unit uCliente;
+
+interface
+
+type
+  TCliente = class
+//  Private
+//    fNomeCliente : String;
+//    fTelefone : String;
+//    fDataNascimento : TDate;
+  //protected
+
+  public
+    fEndereco : String;
+    property NomeCliente     : String read fNomeCliente ;
+    property Telefone        : String read fTelefone;
+    property DataNascimento  : TDate read fDataNascimento;
+
+
+//  published
+
+
+  end;
+
+implementation
+
+end.

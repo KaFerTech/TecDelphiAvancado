@@ -1,0 +1,85 @@
+unit uItensVenda;
+
+interface
+
+uses
+  System.SysUtils, uBaseClass;
+
+type
+  TItemVenda = class(TBaseClass)
+  private
+    fProduto : String;
+    fVlrUni : Integer;
+    fQtde : Integer;
+    procedure SetProduto(const Value: String);
+    procedure SetQtde(const Value: Integer);
+    procedure SetVlrUni(const Value: Currency);
+    function getProduto: String;
+    function getQtde: Integer;
+    function getVlrUni: Currency;
+    function getVlrTotItem: Currency;
+
+  public
+    property Produto : String read getProduto write SetProduto;
+    property VlrUni : Currency read getVlrUni write SetVlrUni;
+    property Qtde : Integer read getQtde write SetQtde;
+    property VlrTotItem : Currency read getVlrTotItem;
+  end;
+
+implementation
+
+{ TItemVenda }
+
+function TItemVenda.getProduto: String;
+begin
+  result := fProduto;
+end;
+
+function TItemVenda.getQtde: Integer;
+begin
+  result := fVlrUni;
+end;
+
+function TItemVenda.getVlrUni: Currency;
+begin
+  result := fQtde * fVlrUni;
+end;
+
+function TItemVenda.getVlrTotItem: Currency;
+begin
+  result := fQtde;
+end;
+
+
+
+procedure TItemVenda.SetProduto(const Value: String);
+begin
+//  if Value.Trim.IsEmpty then
+//    raise Exception.Create('O campo Produto é obrigatório.');
+
+  inherited ValidarValor(Value, 'O campo Produto é obrigatório.');
+  
+  FProduto := Value;
+end;
+
+procedure TItemVenda.SetQtde(const Value: Integer);
+begin
+//  if Value <= 0 then
+//    raise Exception.Create('O campo Qtde é obrigatório.');
+
+  inherited ValidarValor(Value, 'O campo Qtde é obrigatório.');
+    
+  FQtde := Value;
+end;
+
+procedure TItemVenda.SetVlrUni(const Value: Currency);
+begin
+//  if Value <= 0 then
+//    raise Exception.Create('O campo Valor Unitário é obrigatório.'); 
+
+  inherited ValidarValor(Value, 'O campo Valor Unitário é obrigatório.');
+
+  FVlrUni := Value;
+end;
+
+end.

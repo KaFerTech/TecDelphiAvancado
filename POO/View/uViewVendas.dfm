@@ -34,7 +34,7 @@ object frmVendas: TfrmVendas
     TabOrder = 0
     object gbProduto: TGroupBox
       Left = 3
-      Top = 18
+      Top = 61
       Width = 382
       Height = 43
       Caption = 'Produto'
@@ -50,7 +50,7 @@ object frmVendas: TfrmVendas
     end
     object gbVlrUni: TGroupBox
       Left = 391
-      Top = 18
+      Top = 61
       Width = 146
       Height = 43
       Caption = 'Valor Unit'#225'rio'
@@ -65,7 +65,7 @@ object frmVendas: TfrmVendas
     end
     object gbQtde: TGroupBox
       Left = 543
-      Top = 18
+      Top = 61
       Width = 58
       Height = 43
       Caption = 'Qtde'
@@ -80,9 +80,9 @@ object frmVendas: TfrmVendas
         Text = '1'
       end
     end
-    object GroupBox1: TGroupBox
+    object gbCliente: TGroupBox
       Left = 3
-      Top = 64
+      Top = 15
       Width = 237
       Height = 43
       Caption = 'Cliente'
@@ -96,9 +96,9 @@ object frmVendas: TfrmVendas
         TabOrder = 0
       end
     end
-    object GroupBox2: TGroupBox
+    object gbTelefone: TGroupBox
       Left = 246
-      Top = 64
+      Top = 15
       Width = 146
       Height = 43
       Caption = 'Telefone'
@@ -111,9 +111,9 @@ object frmVendas: TfrmVendas
         TabOrder = 0
       end
     end
-    object GroupBox3: TGroupBox
+    object gbDtNascimento: TGroupBox
       Left = 398
-      Top = 64
+      Top = 15
       Width = 146
       Height = 43
       Caption = 'Data Nascimento'
@@ -128,10 +128,10 @@ object frmVendas: TfrmVendas
     end
     object btnExemplo: TButton
       Left = 550
-      Top = 75
+      Top = 26
       Width = 48
       Height = 25
-      Caption = 'Ex'
+      Caption = 'Cli'
       TabOrder = 6
       OnClick = btnExemploClick
     end
@@ -182,9 +182,6 @@ object frmVendas: TfrmVendas
     Height = 41
     Align = alBottom
     TabOrder = 2
-    ExplicitLeft = 136
-    ExplicitTop = 262
-    ExplicitWidth = 185
     object btnGerarVenda: TSpeedButton
       AlignWithMargins = True
       Left = 495

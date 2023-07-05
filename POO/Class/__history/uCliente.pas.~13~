@@ -1,0 +1,66 @@
+unit uCliente;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  TCliente = class
+  Private
+    fNomeCliente: String;
+    fTelefone: String;
+    fDataNascimento: TDate;
+    procedure SetDataNascimento(const Value: TDate);
+    procedure SetNomeCliente(const Value: String);
+    procedure SetTelefone(const Value: String);
+    function getDataNascimento: TDate;
+    function getNomeCliente: String;
+    function getTelefone: String;
+  public
+    // fEndereco : String;
+    property NomeCliente: String read getNomeCliente write SetNomeCliente;
+    property Telefone: String read getTelefone write SetTelefone;
+    property DataNascimento: TDate read getDataNascimento write SetDataNascimento;
+  end;
+
+implementation
+
+{ TCliente }
+
+{ TCliente }
+
+function TCliente.getDataNascimento: TDate;
+begin
+  result := fDataNascimento;
+end;
+
+function TCliente.getNomeCliente: String;
+begin
+  result := fNomeCliente;
+end;
+
+function TCliente.getTelefone: String;
+begin
+  result := Telefone;
+end;
+
+procedure TCliente.SetDataNascimento(const Value: TDate);
+begin
+  fDataNascimento := Value;
+end;
+
+procedure TCliente.SetNomeCliente(const Value: String);
+begin
+  if Trim(Value) = EmptyStr then
+    raise Exception.Create('O campo Nome do Cliente é obrigatório.');
+
+  fNomeCliente := Value;
+end;
+
+procedure TCliente.SetTelefone(const Value: String);
+begin
+  fTelefone := Value;
+end;
+
+end.

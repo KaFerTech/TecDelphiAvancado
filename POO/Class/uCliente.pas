@@ -2,22 +2,80 @@ unit uCliente;
 
 interface
 
+uses
+  System.SysUtils;
+
 type
   TCliente = class
   Private
-    fNomeCliente : String;
-    fTelefone : String;
-    fDataNascimento : TDate;
-  protected
-
+    fNomeCliente: String;
+    fTelefone: String;
+    fDataNascimento: TDate;
+    procedure SetDataNascimento(const Value: TDate);
+    procedure SetNomeCliente(const Value: String);
+    procedure SetTelefone(const Value: String);
+    function getDataNascimento: TDate;
+    function getNomeCliente: String;
+    function getTelefone: String;
+    function getDadosCompletos: String;
   public
-    fEndereco : String;
-
-  published
-
-
+    // fEndereco : String;
+    property NomeCliente: String read getNomeCliente write SetNomeCliente;
+    property Telefone: String read getTelefone write SetTelefone;
+    property DataNascimento: TDate read getDataNascimento write SetDataNascimento;
+    property DadosCompletos: String read getDadosCompletos;
   end;
 
 implementation
+
+{ TCliente }
+
+{ TCliente }
+
+function TCliente.getDadosCompletos: String;
+begin
+  result := 'Nome do Cliente: '     + fNomeCliente + sLineBreak +
+            'Telefone do Cliente: ' + fTelefone + sLineBreak +
+            'Data de Nascimento: '  + DateToStr(fDataNascimento);
+end;
+
+function TCliente.getDataNascimento: TDate;
+begin
+  result := fDataNascimento;
+end;
+
+function TCliente.getNomeCliente: String;
+begin
+  result := fNomeCliente;
+end;
+
+function TCliente.getTelefone: String;
+begin
+  result := Telefone;
+end;
+
+procedure TCliente.SetDataNascimento(const Value: TDate);
+begin
+  if Value <= 0 then
+    raise Exception.Create('O campo Data de Nascimento esta inválida');
+
+  fDataNascimento := Value;
+end;
+
+procedure TCliente.SetNomeCliente(const Value: String);
+begin
+  if Value.Trim.IsEmpty then
+    raise Exception.Create('O campo Nome do Cliente é obrigatório.');
+
+  fNomeCliente := Value;
+end;
+
+procedure TCliente.SetTelefone(const Value: String);
+begin
+  if Value.Trim.IsEmpty then
+    raise Exception.Create('O campo Telefone é obrigatório.');
+
+  fTelefone := Value;
+end;
 
 end.

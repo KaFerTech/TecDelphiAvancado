@@ -1,0 +1,24 @@
+unit uBaseClass;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  TBaseClass = class
+  protected
+    procedure ValidarValor(const pValor, pMensagem : String);
+  end;
+
+implementation
+
+{ TBaseClass }
+
+procedure TBaseClass.ValidarValor(const pValor, pMensagem: String);
+begin
+  if pValor.Trim.IsEmpty then
+    raise Exception.Create(pMensagem);
+end;
+
+end.
