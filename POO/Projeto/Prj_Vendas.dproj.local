@@ -24,6 +24,9 @@
     <Transaction>2023/07/05 11:24:12.888,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoaJuridica.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/05 11:46:16.038,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/05 11:46:29.622,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\uMascarasDocumento.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:52:57.354,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:57:56.763,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPessoa.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2023/07/05 11:57:56.763,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPessoa.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
   </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="..\..\POO"/>
     <File Path="..\Class"/>
@@ -39,6 +42,8 @@
     <File Path="..\View"/>
     <File Path="..\View\uViewVendas.pas"/>
     <File Path="..\View\uViewVendas.dfm"/>
+    <File Path="..\View\uViewPessoa.pas"/>
+    <File Path="..\View\uViewPessoa.dfm"/>
     <File Path="uMascarasDocumento.pas"/>
   </ProjectSortOrder>
 </BorlandProject>
