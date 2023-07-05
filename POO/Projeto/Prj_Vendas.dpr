@@ -6,7 +6,11 @@ uses
   unDmVendas in '..\Data Module\unDmVendas.pas' {dmVendas: TDataModule},
   uCliente in '..\Class\uCliente.pas',
   uItensVenda in '..\Class\uItensVenda.pas',
-  uBaseClass in '..\Class\uBaseClass.pas';
+  uBaseClass in '..\Class\uBaseClass.pas',
+  uPessoa in '..\Class\uPessoa.pas',
+  uPessoaFisica in '..\Class\uPessoaFisica.pas',
+  uPessoaJuridica in '..\Class\uPessoaJuridica.pas',
+  uMascarasDocumento in 'uMascarasDocumento.pas';
 
 {$R *.res}
 

@@ -1,0 +1,37 @@
+unit uPessoaFisica;
+
+interface
+
+uses
+  uPessoa, System.SysUtils;
+
+type
+  TPessoaFisica = class(TPessoa)
+  private
+    FCPF: String;
+    procedure SetCPF(const Value: String);
+    function getCPF: String;
+
+  public
+    property CPF : String read getCPF write SetCPF;
+    function DocumentoFormatado(const pDocumento, pMascara : String) : string; override;
+
+  end;
+
+implementation
+
+{ TPessoaFisica }
+
+function TPessoaFisica.getCPF: String;
+begin
+
+end;
+
+procedure TPessoaFisica.SetCPF(const Value: String);
+begin
+  ValidarValor(Length(Trim(Value)) <> 11, 'CPF Inválido.');
+
+  FCPF := Value;
+end;
+
+end.

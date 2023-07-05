@@ -30,8 +30,7 @@ implementation
 
 procedure TdmVendas.cdsVendasBeforePost(DataSet: TDataSet);
 begin
-  cdsVendasValorTotalItem.AsCurrency := cdsVendasQtde.AsInteger * cdsVendasValorUnitario.AsCurrency;
-
+//  cdsVendasValorTotalItem.AsCurrency := cdsVendasQtde.AsInteger * cdsVendasValorUnitario.AsCurrency;
 end;
 
 end.

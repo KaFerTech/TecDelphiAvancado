@@ -16,5 +16,29 @@
     <Transaction>2023/07/05 09:21:28.364,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uItensVenda.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/05 09:40:25.138,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/05 09:43:59.896,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uBaseClass.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-  </Transactions>
+    <Transaction>2023/07/05 10:41:06.666,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 10:41:21.822,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoa.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:03:24.542,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:03:37.752,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoaFisica.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:23:57.000,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:24:12.888,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoaJuridica.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:46:16.038,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:46:29.622,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\uMascarasDocumento.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\POO"/>
+    <File Path="..\Class"/>
+    <File Path="..\Class\uBaseClass.pas"/>
+    <File Path="..\Class\uCliente.pas"/>
+    <File Path="..\Class\uItensVenda.pas"/>
+    <File Path="..\Class\uPessoa.pas"/>
+    <File Path="..\Class\uPessoaFisica.pas"/>
+    <File Path="..\Class\uPessoaJuridica.pas"/>
+    <File Path="..\Data Module"/>
+    <File Path="..\Data Module\unDmVendas.pas"/>
+    <File Path="..\Data Module\unDmVendas.dfm"/>
+    <File Path="..\View"/>
+    <File Path="..\View\uViewVendas.pas"/>
+    <File Path="..\View\uViewVendas.dfm"/>
+    <File Path="uMascarasDocumento.pas"/>
+  </ProjectSortOrder>
 </BorlandProject>

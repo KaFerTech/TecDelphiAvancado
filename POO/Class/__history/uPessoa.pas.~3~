@@ -1,0 +1,70 @@
+unit uPessoa;
+
+interface
+
+uses
+  uBaseClass;
+
+type
+  TPessoa = class(TBaseClass)
+  private
+    fNome: String;
+    fEndereco: String;
+    fDocumento: String;
+    function getDocumento: String;
+    function getEndereco: String;
+    function getNome: String;
+    procedure setDocumento(const Value: String);
+    procedure setEndereco(const Value: String);
+    procedure setNome(const Value: String);
+  protected
+    property Nome: String read getNome write setNome;
+    property Endereco: String read getEndereco write setEndereco;
+    property Documento: String read getDocumento write setDocumento; 
+    function DocumentoFormatado(const Documento, pMascara : String) : String; virtual; abstract;
+    property DadosCompletos : String; virtual; abstract;
+
+
+  end;
+
+implementation
+
+{ TPessoa }
+
+function TPessoa.getNome: String;
+begin
+  return := fNome;
+end;
+
+function TPessoa.getDocumento: String;
+begin
+  return := fDocumento;
+end;
+
+function TPessoa.getEndereco: String;
+begin
+  return := fEndereco;
+end;
+
+
+
+procedure TPessoa.setDocumento(const Value: String);
+begin
+if Value <= 0 then
+    raise Exception.Create('O campo Data de Nascimento esta inválida');
+
+  fDataNascimento := Value;
+end;
+
+procedure TPessoa.setEndereco(const Value: String);
+begin
+
+end;
+
+procedure TPessoa.setNome(const Value: String);
+begin
+  ValidarValor(Length(Trim(Value))) < 5, 'O campo Nome é obrigatório');
+  
+end;
+
+end.

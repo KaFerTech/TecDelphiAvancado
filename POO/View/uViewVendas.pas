@@ -7,7 +7,7 @@ uses
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Buttons, Vcl.ExtCtrls,
   Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Datasnap.DBClient, unDmVendas,
-  Vcl.DBCtrls, uItensVenda;
+  Vcl.DBCtrls, uItensVenda, Vcl.ComCtrls;
 
 type
   TfrmVendas = class(TForm)
@@ -29,8 +29,8 @@ type
     gbTelefone: TGroupBox;
     edtTelefoneCliente: TEdit;
     gbDtNascimento: TGroupBox;
-    edtDataNascimentoCliente: TEdit;
     btnExemplo: TButton;
+    edtDataNascimentoCliente: TEdit;
     procedure btnAdicionarProdutoClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -118,7 +118,7 @@ begin
   vItemVenda.VlrUni := StrToCurrDef(edtVlrUni.Text, 0);
   vItemVenda.Qtde := StrToIntDef(edtQtde.Text, 1);
 
-  dmVendas.cdsVendas.AppendRecord([vItemVenda.Produto, vItemVenda.VlrUni, vItemVenda.Qtde]);
+  dmVendas.cdsVendas.AppendRecord([vItemVenda.Produto, vItemVenda.VlrUni, vItemVenda.Qtde, vItemVenda.VlrTotItem]);
 
 
 //  dmVendas.cdsVendas.AppendRecord([
