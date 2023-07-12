@@ -7,7 +7,7 @@ uses
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Buttons, Vcl.ExtCtrls,
   Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Datasnap.DBClient, unDmVendas,
-  Vcl.DBCtrls, uItensVenda, Vcl.ComCtrls;
+  Vcl.DBCtrls, uItemVenda, Vcl.ComCtrls;
 
 type
   TfrmVendas = class(TForm)
@@ -69,7 +69,7 @@ begin
   vCliente.Telefone := edtTelefoneCliente.Text;
   vCliente.DataNascimento := StrToDate(edtDataNascimentoCliente.Text);
 
-  ShowMessage(vCliente.DadosCompletos);
+  ShowMessage(vCliente.NomeCompleto);
 
 end;
 
@@ -114,11 +114,11 @@ var
   vItemVenda : TItemVenda;
 begin
   vItemVenda := TItemVenda.Create;
-  vItemVenda.Produto := Trim(edtProduto.Text);
-  vItemVenda.VlrUni := StrToCurrDef(edtVlrUni.Text, 0);
+  vItemVenda.NomeProduto := Trim(edtProduto.Text);
+  vItemVenda.ValorUnitario := StrToCurrDef(edtVlrUni.Text, 0);
   vItemVenda.Qtde := StrToIntDef(edtQtde.Text, 1);
 
-  dmVendas.cdsVendas.AppendRecord([vItemVenda.Produto, vItemVenda.VlrUni, vItemVenda.Qtde, vItemVenda.VlrTotItem]);
+  dmVendas.cdsVendas.AppendRecord([vItemVenda.NomeProduto, vItemVenda.ValorUnitario, vItemVenda.Qtde, vItemVenda.ValorTotalItem]);
 
 
 //  dmVendas.cdsVendas.AppendRecord([

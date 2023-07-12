@@ -7,75 +7,72 @@ uses
 
 type
   TCliente = class
-  Private
-    fNomeCliente: String;
-    fTelefone: String;
-    fDataNascimento: TDate;
+  private
+    fNomeCliente : string;
+    fTelefone : string;
+    fDataNascimento : TDate;
+    FNomeCompleto: string;
     procedure SetDataNascimento(const Value: TDate);
-    procedure SetNomeCliente(const Value: String);
-    procedure SetTelefone(const Value: String);
+    procedure SetNomeCliente(const Value: string);
+    procedure SetTelefone(const Value: string);
     function getDataNascimento: TDate;
-    function getNomeCliente: String;
-    function getTelefone: String;
-    function getDadosCompletos: String;
+    function getNomeCliente: string;
+    function getTelefone: string;
+    function getNomeCompleto: string;
   public
-    // fEndereco : String;
-    property NomeCliente: String read getNomeCliente write SetNomeCliente;
-    property Telefone: String read getTelefone write SetTelefone;
-    property DataNascimento: TDate read getDataNascimento write SetDataNascimento;
-    property DadosCompletos: String read getDadosCompletos;
+    property NomeCliente    : string read getNomeCliente write SetNomeCliente;
+    property Telefone       : string read getTelefone write SetTelefone;
+    property DataNascimento : TDate read getDataNascimento write SetDataNascimento;
+    property NomeCompleto : string read getNomeCompleto;
   end;
 
 implementation
 
 { TCliente }
 
-{ TCliente }
-
-function TCliente.getDadosCompletos: String;
-begin
-  result := 'Nome do Cliente: '     + fNomeCliente + sLineBreak +
-            'Telefone do Cliente: ' + fTelefone + sLineBreak +
-            'Data de Nascimento: '  + DateToStr(fDataNascimento);
-end;
-
 function TCliente.getDataNascimento: TDate;
 begin
-  result := fDataNascimento;
+  Result := fDataNascimento;
 end;
 
-function TCliente.getNomeCliente: String;
+function TCliente.getNomeCliente: string;
 begin
-  result := fNomeCliente;
+  Result := fNomeCliente;
 end;
 
-function TCliente.getTelefone: String;
+function TCliente.getNomeCompleto: string;
 begin
-  result := Telefone;
+  Result := 'Nome do Cliente: ' + fNomeCliente + sLineBreak +
+            'Telefone do Cliente: ' + fTelefone + sLineBreak +
+            'Data de Nascimento: ' + DateToStr(fDataNascimento);
+end;
+
+function TCliente.getTelefone: string;
+begin
+  Result := fTelefone;
 end;
 
 procedure TCliente.SetDataNascimento(const Value: TDate);
 begin
   if Value <= 0 then
-    raise Exception.Create('O campo Data de Nascimento esta inválida');
-
-  fDataNascimento := Value;
+    raise Exception.Create('O campo Data de Nascimento é obrigatório!');
+  FDataNascimento := Value;
 end;
 
-procedure TCliente.SetNomeCliente(const Value: String);
+procedure TCliente.SetNomeCliente(const Value: string);
 begin
   if Value.Trim.IsEmpty then
-    raise Exception.Create('O campo Nome do Cliente é obrigatório.');
+    raise Exception.Create('O campo Nome do Cliente é obrigatório!');
 
-  fNomeCliente := Value;
+  FNomeCliente := Value;
 end;
 
-procedure TCliente.SetTelefone(const Value: String);
+procedure TCliente.SetTelefone(const Value: string);
 begin
   if Value.Trim.IsEmpty then
-    raise Exception.Create('O campo Telefone é obrigatório.');
-
-  fTelefone := Value;
+    raise Exception.Create('O campo Telefone é obrigatório!');
+  FTelefone := Value;
 end;
 
 end.
+

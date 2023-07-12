@@ -5,7 +5,7 @@ uses
   uViewVendas in '..\View\uViewVendas.pas' {frmVendas},
   unDmVendas in '..\Data Module\unDmVendas.pas' {dmVendas: TDataModule},
   uCliente in '..\Class\uCliente.pas',
-  uItensVenda in '..\Class\uItensVenda.pas',
+  uItemVenda in '..\Class\uItemVenda.pas',
   uBaseClass in '..\Class\uBaseClass.pas',
   uPessoa in '..\Class\uPessoa.pas',
   uPessoaFisica in '..\Class\uPessoaFisica.pas',
@@ -18,6 +18,8 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TdmVendas, dmVendas);
+  Application.CreateForm(TfrmPessoa, frmPessoa);
   Application.CreateForm(TfrmVendas, frmVendas);
   Application.Run;
 end.

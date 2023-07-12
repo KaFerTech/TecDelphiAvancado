@@ -8,43 +8,34 @@ uses
 type
   TPessoaFisica = class(TPessoa)
   private
-    FCPF : String;
-    function getCPF: String;
-    procedure SetCPF(const Value: String);
-
-
+    FCPF: string;
+    procedure SetCPF(const Value: string);
   public
-    property CPF : String read getCPF write SetCPF;
-    function DocumentoFormatado(const pDocumento : String) : string; override;
-    function DadosCompletos() : string; override;
+    property CPF : string read FCPF write SetCPF;
+
+    function DocumentoFormatado(const pDocumento : string) : string; override;
+    function DadosCompletos : string; override;
   end;
 
 implementation
 
-{ TPessoaFisica }
-
 function TPessoaFisica.DadosCompletos: string;
 begin
-  Result := 'Nome da Pessoa: ' + Nome + sLineBreak +
-            'Endereço: ' + Endereco + sLineBreak +
-            'Documento: ' + FCPF;
+  ValidarValor(Length(Trim(Documento)) <> 11, 'CPF inválido.');
+  Result := 'Nome da pessoa física: ' + Nome + ' - ' + DocumentoFormatado(Documento);
 end;
 
-function TPessoaFisica.DocumentoFormatado(const pDocumento): string;
+function TPessoaFisica.DocumentoFormatado(const pDocumento : string): string;
 begin
   Result := FormatMaskText(C_MascaraCPF, pDocumento);
 end;
 
-function TPessoaFisica.getCPF: String;
+procedure TPessoaFisica.SetCPF(const Value: string);
 begin
-  Result := FCPF;
-end;
-
-procedure TPessoaFisica.SetCPF(const Value: String);
-begin
-  ValidarValor(Length(Trim(Value)) <> 11, 'CPF Inválido.');
+  ValidarValor(Length(Trim(Value)) <> 11, 'CPF inválido.');
 
   FCPF := Value;
 end;
 
 end.
+

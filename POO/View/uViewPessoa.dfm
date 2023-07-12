@@ -13,7 +13,7 @@ object frmPessoa: TfrmPessoa
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object RadioGroup1: TRadioGroup
+  object rdgTipo: TRadioGroup
     AlignWithMargins = True
     Left = 3
     Top = 3
@@ -22,6 +22,7 @@ object frmPessoa: TfrmPessoa
     Align = alTop
     Caption = 'Tipo'
     Columns = 2
+    ItemIndex = 0
     Items.Strings = (
       'Pessoa Fisica'
       'Pessoa juridica')
@@ -36,14 +37,12 @@ object frmPessoa: TfrmPessoa
     Align = alTop
     Caption = 'Nome'
     TabOrder = 1
-    ExplicitTop = 54
     object edtNome: TEdit
       Left = 3
       Top = 17
       Width = 279
       Height = 21
       TabOrder = 0
-      Text = 'edtNome'
     end
   end
   object GroupBox2: TGroupBox
@@ -55,14 +54,12 @@ object frmPessoa: TfrmPessoa
     Align = alTop
     Caption = 'Documento'
     TabOrder = 2
-    ExplicitTop = 105
     object edtDocumento: TEdit
       Left = 3
       Top = 17
       Width = 279
       Height = 21
       TabOrder = 0
-      Text = 'edtDocumento'
     end
   end
   object Panel1: TPanel
@@ -72,9 +69,6 @@ object frmPessoa: TfrmPessoa
     Height = 41
     Align = alBottom
     TabOrder = 3
-    ExplicitLeft = 48
-    ExplicitTop = 264
-    ExplicitWidth = 185
     object btnFormatarDocumento: TSpeedButton
       Left = 168
       Top = 1
@@ -87,11 +81,12 @@ object frmPessoa: TfrmPessoa
     object btnNomeCompleto: TSpeedButton
       Left = 1
       Top = 1
-      Width = 104
+      Width = 96
       Height = 39
       Align = alLeft
       Caption = 'Nome Completo'
       Flat = True
+      OnClick = btnNomeCompletoClick
     end
   end
 end

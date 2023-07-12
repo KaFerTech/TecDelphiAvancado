@@ -17,7 +17,7 @@ type
     procedure setDocumento(const Value: String);
     procedure setEndereco(const Value: String);
     procedure setNome(const Value: String);
-  protected
+  public
     property Nome: String read getNome write setNome;
     property Endereco: String read getEndereco write setEndereco;
     property Documento: String read getDocumento write setDocumento; 

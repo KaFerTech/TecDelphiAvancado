@@ -8,47 +8,35 @@ uses
 type
   TBaseClass = class
   protected
-    procedure ValidarValor(const pValor, pMensagem : String); overload;
-    procedure ValidarValor(const pValor : Integer; const pMensagem : String); overload;
-    procedure ValidarValor(const pValor : Currency; const pMensagem : String); overload;
-    procedure ValidarValor(const pCondicao : boolean; const pMensagem : String); overload;
+    procedure ValidarValor(const pValor, pMensagem : string); overload;
+    procedure ValidarValor(const pValor : Integer; const pMensagem : string); overload;
+    procedure ValidarValor(const pValor : Currency; const pMensagem : string); overload;
+    procedure ValidarValor(const pCondicao : Boolean; const pMensagem : string); overload;
   end;
 
 implementation
 
 { TBaseClass }
 
-procedure TBaseClass.ValidarValor(const pValor, pMensagem: String);
+procedure TBaseClass.ValidarValor(const pValor, pMensagem: string);
 begin
-
-  //Validador para debug
   Assert(not pValor.Trim.IsEmpty, pMensagem);
-
-//  if pValor.Trim.IsEmpty then
-//    raise Exception.Create(pMensagem);
 end;
 
-procedure TBaseClass.ValidarValor(const pValor: Integer; const pMensagem: String);
+procedure TBaseClass.ValidarValor(const pValor: Integer; const pMensagem: string);
 begin
-
-//  Assert(pValor >= 1, pMensagem);
-
-  if pValor < 1 then
-    raise Exception.Create(pMensagem);
+  Assert(pValor >= 1, pMensagem);
 end;
 
-procedure TBaseClass.ValidarValor(const pValor: Currency; const pMensagem: String);
+procedure TBaseClass.ValidarValor(const pValor: Currency; const pMensagem: string);
 begin
-
-//  Assert(pValor > 0, pMensagem);
-
-  if pValor <= 0 then
-    raise Exception.Create(pMensagem);
+  Assert(pValor > 0, pMensagem);
 end;
 
-procedure TBaseClass.ValidarValor(const pCondicao: boolean; const pMensagem: String);
+procedure TBaseClass.ValidarValor(const pCondicao: Boolean; const pMensagem: string);
 begin
   Assert(not pCondicao, pMensagem);
 end;
 
 end.
+
