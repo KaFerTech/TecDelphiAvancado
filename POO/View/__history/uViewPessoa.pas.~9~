@@ -1,0 +1,68 @@
+unit uViewPessoa;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls,
+  uPessoaFisica, uPessoaJuridica;
+
+type
+  TfrmPessoa = class(TForm)
+    rdgTipo: TRadioGroup;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    edtNome: TEdit;
+    edtDocumento: TEdit;
+    Panel1: TPanel;
+    btnFormatarDocumento: TSpeedButton;
+    btnNomeCompleto: TSpeedButton;
+    procedure btnNomeCompletoClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    fPessoaFisica : TPessoaFisica;
+    fPessoaJuridica : TPessoaJuridica;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPessoa: TfrmPessoa;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPessoa.btnNomeCompletoClick(Sender: TObject);
+
+begin
+
+  case rdgTipo.ItemIndex of
+    0 :
+    begin
+
+      fPessoaFisica.Nome := edtNome.Text;
+      fPessoaFisica.Documento := edtDocumento.Text;
+
+      ShowMessage(fPessoaFisica.DadosCompletos);
+    end;
+
+    1:
+    begin
+      fPessoaJuridica.Nome := edtNome.Text;
+      fPessoaJuridica.Documento := edtDocumento.Text;
+
+      ShowMessage(fPessoaJuridica.DadosCompletos);
+    end;
+
+  end;
+
+end;
+
+procedure TfrmPessoa.FormCreate(Sender: TObject);
+begin
+  fPessoaFisica := TPessoaFisica.Create;
+  fPessoaJuridica := TPessoaJuridica.Create;
+end;
+
+end.

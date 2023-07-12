@@ -3,15 +3,24 @@ unit uPessoaFisica;
 interface
 
 uses
-  uPessoa, System.SysUtils, System.MaskUtils, uMascarasDocumento;
+  uPessoa, System.SysUtils, System.MaskUtils, uMascarasDocumento,
+  System.Classes;
 
 type
   TPessoaFisica = class(TPessoa)
   private
-    FCPF: string;
-    procedure SetCPF(const Value: string);
+    fLista : TStringList;
+    fCPF: string;
+    function getCPF : String;
   public
-    property CPF : string read FCPF write SetCPF;
+//    constructor Create; Overload;
+//    constructor Create(pCPF : string); Overload;
+
+//    constructor Create;
+//
+//    destructor Destroy; override;
+
+    property CPF : string read getCPF;
 
     function DocumentoFormatado(const pDocumento : string) : string; override;
     function DadosCompletos : string; override;
@@ -19,22 +28,34 @@ type
 
 implementation
 
+//constructor TPessoaFisica.Create;
+//begin
+//  Documento := TStringList;
+//end;
+
+//constructor TPessoaFisica.Create(pCPF: string);
+//begin
+//  fCPF := pCPF;
+//end;
+
 function TPessoaFisica.DadosCompletos: string;
 begin
-  ValidarValor(Length(Trim(Documento)) <> 11, 'CPF inválido.');
-  Result := 'Nome da pessoa física: ' + Nome + ' - ' + DocumentoFormatado(Documento);
+  Result := 'Nome da pessoa física: ' + Nome + ' - ' + CPF;
 end;
+
 
 function TPessoaFisica.DocumentoFormatado(const pDocumento : string): string;
 begin
   Result := FormatMaskText(C_MascaraCPF, pDocumento);
 end;
 
-procedure TPessoaFisica.SetCPF(const Value: string);
+function TPessoaFisica.getCPF: String;
 begin
-  ValidarValor(Length(Trim(Value)) <> 11, 'CPF inválido.');
+  ValidarValor(Documento.Trim.Length <> 11, 'CPF inválido.');
 
-  FCPF := Value;
+  fCPF := DocumentoFormatado(Documento);
+
+  Result := fCPF
 end;
 
 end.

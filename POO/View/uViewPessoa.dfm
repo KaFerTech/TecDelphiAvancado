@@ -11,6 +11,7 @@ object frmPessoa: TfrmPessoa
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object rdgTipo: TRadioGroup
@@ -77,6 +78,7 @@ object frmPessoa: TfrmPessoa
       Align = alRight
       Caption = 'Formatar Documento'
       Flat = True
+      OnClick = btnFormatarDocumentoClick
     end
     object btnNomeCompleto: TSpeedButton
       Left = 1

@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls,
-  uPessoaFisica, uPessoaJuridica;
+  uPessoaFisica, uPessoaJuridica, uBibliotecaFuncoes;
 
 type
   TfrmPessoa = class(TForm)
@@ -18,8 +18,13 @@ type
     btnFormatarDocumento: TSpeedButton;
     btnNomeCompleto: TSpeedButton;
     procedure btnNomeCompletoClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnFormatarDocumentoClick(Sender: TObject);
   private
-    { Private declarations }
+    fPessoaFisica : TPessoaFisica;
+    fPessoaJuridica : TPessoaJuridica;
+    procedure setDadosPessoaFisica;
+    procedure setDadosPessoaJuridica;
   public
     { Public declarations }
   end;
@@ -31,33 +36,64 @@ implementation
 
 {$R *.dfm}
 
+procedure TfrmPessoa.btnFormatarDocumentoClick(Sender: TObject);
+begin
+  case rdgTipo.ItemIndex of
+    0 :
+    begin
+      setDadosPessoaFisica;
+      ShowMessage(fPessoaFisica.CPF);
+    end;
+    1 :
+    begin
+      setDadosPessoaJuridica;
+      ShowMessage(fPessoaJuridica.CNPJ);
+    end;
+  end;
+
+end;
+
+procedure TfrmPessoa.setDadosPessoaFisica;
+begin
+  fPessoaFisica.Nome := edtNome.Text;
+  fPessoaFisica.Documento := TUtils.getNumeros(edtDocumento.Text);
+end;
+
+procedure TfrmPessoa.setDadosPessoaJuridica;
+begin
+  fPessoaJuridica.Nome := edtNome.Text;
+  fPessoaJuridica.Documento := TUtils.getNumeros(edtDocumento.Text);
+end;
+
 procedure TfrmPessoa.btnNomeCompletoClick(Sender: TObject);
-var
-  vPessoaFisica : TPessoaFisica;
-  vPessoaJuridica : TPessoaJuridica;
+
 begin
 
   case rdgTipo.ItemIndex of
     0 :
     begin
-      vPessoaFisica := TPessoaFisica.Create;
-      vPessoaFisica.Nome := edtNome.Text;
-      vPessoaFisica.Documento := edtDocumento.Text;
+      setDadosPessoaFisica;
 
-      ShowMessage(vPessoaFisica.DadosCompletos);
+      ShowMessage(fPessoaFisica.DadosCompletos);
     end;
 
     1:
     begin
-      vPessoaJuridica := TPessoaJuridica.Create;
-      vPessoaJuridica.Nome := edtNome.Text;
-      vPessoaJuridica.Documento := edtDocumento.Text;
+      setDadosPessoaJuridica;
 
-      ShowMessage(vPessoaJuridica.DadosCompletos);
+      ShowMessage(fPessoaJuridica.DadosCompletos);
     end;
 
   end;
 
+
+end;
+
+procedure TfrmPessoa.FormCreate(Sender: TObject);
+begin
+//  fPessoaFisica := TPessoaFisica.Create;
+//  fPessoaFisica := TPessoaFisica.Create('456');
+  fPessoaJuridica := TPessoaJuridica.Create;
 end;
 
 end.

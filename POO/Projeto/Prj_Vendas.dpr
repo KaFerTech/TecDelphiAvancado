@@ -11,11 +11,15 @@ uses
   uPessoaFisica in '..\Class\uPessoaFisica.pas',
   uPessoaJuridica in '..\Class\uPessoaJuridica.pas',
   uMascarasDocumento in 'uMascarasDocumento.pas',
-  uViewPessoa in '..\View\uViewPessoa.pas' {frmPessoa};
+  uViewPessoa in '..\View\uViewPessoa.pas' {frmPessoa},
+  uBibliotecaFuncoes in '..\Class\uBibliotecaFuncoes.pas';
 
 {$R *.res}
 
 begin
+
+//  ReportMemoryLeaksOnShutdown := true;
+
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmVendas, dmVendas);

@@ -1,0 +1,19 @@
+unit uBibliotecaFuncoes;
+
+interface
+
+type
+  TUtils = class
+    class function getNumeros(const pString : String) : string;
+  end;
+
+implementation
+
+{ TUtils }
+
+class function TUtils.getNumeros(const pString: String): string;
+begin
+
+end;
+
+end.

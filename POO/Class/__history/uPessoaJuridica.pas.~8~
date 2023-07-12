@@ -1,0 +1,43 @@
+unit uPessoaJuridica;
+
+interface
+
+uses
+  uPessoa, System.SysUtils, System.MaskUtils, uMascarasDocumento;
+
+type
+  TPessoaJuridica = class(TPessoa)
+  private
+    FCNPJ: string;
+    procedure SetCNPJ(const Value: string);
+  public
+    property CNPJ : string read FCNPJ write SetCNPJ;
+
+    function DocumentoFormatado(const pDocumento : string) : string; override;
+    function DadosCompletos : string; override;
+  end;
+
+implementation
+
+{ TPessoaJuridica }
+
+function TPessoaJuridica.DadosCompletos: string;
+begin
+  ValidarValor(Length(Trim(Documento)) <> 14, 'CNPJ inválido.');
+  Result := 'Nome da empresa: ' + Nome + ' - ' + DocumentoFormatado(Documento);
+end;
+
+function TPessoaJuridica.DocumentoFormatado(const pDocumento : string): string;
+begin
+  Result := FormatMaskText(C_MascaraCNPJ, pDocumento);
+end;
+
+procedure TPessoaJuridica.SetCNPJ(const Value: string);
+begin
+  ValidarValor(Length(Trim(Value)) <> 14, 'CNPJ inválido.');
+
+  FCNPJ := Value;
+end;
+
+end.
+

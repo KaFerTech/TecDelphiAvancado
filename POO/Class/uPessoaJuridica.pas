@@ -8,10 +8,10 @@ uses
 type
   TPessoaJuridica = class(TPessoa)
   private
-    FCNPJ: string;
-    procedure SetCNPJ(const Value: string);
+    fCNPJ: string;
+    function getCNPJ : string;
   public
-    property CNPJ : string read FCNPJ write SetCNPJ;
+    property CNPJ : string read getCNPJ;
 
     function DocumentoFormatado(const pDocumento : string) : string; override;
     function DadosCompletos : string; override;
@@ -23,8 +23,7 @@ implementation
 
 function TPessoaJuridica.DadosCompletos: string;
 begin
-  ValidarValor(Length(Trim(Documento)) <> 14, 'CNPJ inválido.');
-  Result := 'Nome da empresa: ' + Nome + ' - ' + DocumentoFormatado(Documento);
+  Result := 'Nome da empresa: ' + Nome + ' - ' + CNPJ;
 end;
 
 function TPessoaJuridica.DocumentoFormatado(const pDocumento : string): string;
@@ -32,11 +31,13 @@ begin
   Result := FormatMaskText(C_MascaraCNPJ, pDocumento);
 end;
 
-procedure TPessoaJuridica.SetCNPJ(const Value: string);
+function TPessoaJuridica.getCNPJ: string;
 begin
-  ValidarValor(Length(Trim(Value)) <> 14, 'CNPJ inválido.');
+  ValidarValor(Documento.Trim.Length <> 14, 'CNPJ inválido.');
 
-  FCNPJ := Value;
+  fCNPJ := DocumentoFormatado(Documento);
+
+  Result := fCNPJ
 end;
 
 end.
