@@ -1,0 +1,29 @@
+unit uModelMultiplica;
+
+interface
+
+uses
+  System.Classes, uInterfaceCalculadora, System.SysUtils;
+
+type
+  TModelSoma = class(TInterfacedObject, iCalculadora)
+  public
+    function getResultado(const pValores : array of integer) : String;
+  end;
+
+implementation
+
+{ TModelMultiplica }
+
+function TModelSoma.getResultado(const pValores: array of integer): String;
+var
+  vCount : integer;
+  vResult : integer;
+begin
+  for vCount := Low(pValores) to High(pValores) do
+    vResult := vResult * pValores[vCount];
+
+  Result := vResult.ToString;
+end;
+
+end.

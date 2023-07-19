@@ -1,0 +1,18 @@
+unit uModelResultado;
+
+interface
+type
+  TModelCalculadora = class(TInterfacedObject, uInterfaceCalculadora)
+  private
+    fLista : TStringList;
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    procedure setFazerAlgo;
+    function getRetornarAlgo : string;
+  end;
+
+implementation
+
+end.

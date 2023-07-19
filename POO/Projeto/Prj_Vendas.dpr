@@ -3,7 +3,7 @@ program Prj_Vendas;
 uses
   {$ifdef debug}
   FastMM4,
-  {$endif}
+  {$endif }
   Vcl.Forms,
   uViewVendas in '..\View\uViewVendas.pas' {frmVendas},
   unDmVendas in '..\Data Module\unDmVendas.pas' {dmVendas: TDataModule},
@@ -16,7 +16,9 @@ uses
   uMascarasDocumento in 'uMascarasDocumento.pas',
   uViewPessoa in '..\View\uViewPessoa.pas' {frmPessoa},
   uBibliotecaFuncoes in '..\Class\uBibliotecaFuncoes.pas',
-  uControllerPessoa in '..\Class\uControllerPessoa.pas';
+  uControllerPessoa in '..\Class\uControllerPessoa.pas',
+  uInterfaces.MinhaInterface in '..\Interfaces\uInterfaces.MinhaInterface.pas',
+  uModel.MinhaInterface in '..\Model Interface\uModel.MinhaInterface.pas';
 
 {$R *.res}
 

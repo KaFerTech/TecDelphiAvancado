@@ -32,6 +32,10 @@
     <Transaction>2023/07/12 10:21:45.000.408,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uBibliotecaFuncoes.pas</Transaction>
     <Transaction>2023/07/19 08:59:14.800,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/19 08:59:40.888,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uControllerPessoa.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 10:25:45.266,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 10:29:03.613,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Interfaces\uInterfaces.MinhaInterface.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 10:32:04.923,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 10:32:53.869,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Model Interface\uModel.MinhaInterface.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="..\..\POO"/>
@@ -47,6 +51,10 @@
     <File Path="..\Data Module"/>
     <File Path="..\Data Module\unDmVendas.pas"/>
     <File Path="..\Data Module\unDmVendas.dfm"/>
+    <File Path="..\Interfaces"/>
+    <File Path="..\Interfaces\uInterfaces.MinhaInterface.pas"/>
+    <File Path="..\Model Interface"/>
+    <File Path="..\Model Interface\uModel.MinhaInterface.pas"/>
     <File Path="..\View"/>
     <File Path="..\View\uViewPessoa.pas"/>
     <File Path="..\View\uViewPessoa.dfm"/>

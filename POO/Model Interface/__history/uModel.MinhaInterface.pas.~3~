@@ -1,0 +1,31 @@
+unit uModel.MinhaInterface;
+
+interface
+
+uses
+  uInterfaces.MinhaInterface;
+
+  //TInterfacedObject -> ARC = contador automatico de referencia
+
+type
+  TModelMinhaInterface = class(TInterfacedObject, iMinhaInterface)
+  public
+    procedure setFazerAlgo;
+    function getRetornarAlgo : string;
+  end;
+
+implementation
+
+{ TModelMinhaInterface }
+
+function TModelMinhaInterface.getRetornarAlgo: string;
+begin
+
+end;
+
+procedure TModelMinhaInterface.setFazerAlgo;
+begin
+
+end;
+
+end.

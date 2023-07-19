@@ -19,13 +19,14 @@ type
     edtNome: TEdit;
     edtDocumento: TEdit;
     Panel1: TPanel;
-    btnFormatarDocumento: TSpeedButton;
     btnNomeCompleto: TSpeedButton;
     GroupBox3: TGroupBox;
     edtEndereco: TEdit;
+    btnFormatarDocumento: TSpeedButton;
+    btnBotao3: TButton;
     procedure btnNomeCompletoClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure btnFormatarDocumentoClick(Sender: TObject);
+    procedure btnDoisClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
 //    fPessoaFisica : TPessoaFisica;
@@ -44,7 +45,7 @@ implementation
 
 {$R *.dfm}
 
-procedure TfrmPessoa.btnFormatarDocumentoClick(Sender: TObject);
+procedure TfrmPessoa.btnDoisClick(Sender: TObject);
 begin
   case rdgTipo.ItemIndex of
     0 :

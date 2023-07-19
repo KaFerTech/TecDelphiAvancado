@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/07/19 11:00:34.120,=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:01:22.519,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uViewCalculadora.pas=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:01:22.519,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uViewCalculadora.dfm=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/07/19 11:01:28.941,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Calculadora.dproj=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/07/19 11:01:41.392,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:02:04.826,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uInterfaceCalculadora.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:03:32.562,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:03:46.498,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelCalculadora.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:05:25.228,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelResultado.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelCalculadora.pas</Transaction>
+    <Transaction>2023/07/19 11:10:31.388,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelSoma.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelResultado.pas</Transaction>
+    <Transaction>2023/07/19 11:12:58.964,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:13:06.396,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit2.pas</Transaction>
+    <Transaction>2023/07/19 11:13:08.583,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit3.pas</Transaction>
+    <Transaction>2023/07/19 11:13:16.581,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit3.pas</Transaction>
+    <Transaction>2023/07/19 11:13:49.323,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelSubtrai.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 11:13:58.495,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelDivide.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit3.pas</Transaction>
+    <Transaction>2023/07/19 11:14:04.501,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\uModelMultiplica.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\Calculadora\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

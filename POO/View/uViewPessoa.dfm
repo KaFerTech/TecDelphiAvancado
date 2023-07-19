@@ -3,7 +3,7 @@ object frmPessoa: TfrmPessoa
   Top = 0
   Caption = 'Pessoa'
   ClientHeight = 248
-  ClientWidth = 291
+  ClientWidth = 359
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,7 +19,7 @@ object frmPessoa: TfrmPessoa
     AlignWithMargins = True
     Left = 3
     Top = 3
-    Width = 285
+    Width = 353
     Height = 43
     Align = alTop
     Caption = 'Tipo'
@@ -29,59 +29,63 @@ object frmPessoa: TfrmPessoa
       'Pessoa Fisica'
       'Pessoa juridica')
     TabOrder = 0
+    ExplicitWidth = 285
   end
   object GroupBox1: TGroupBox
     AlignWithMargins = True
     Left = 3
     Top = 52
-    Width = 285
+    Width = 353
     Height = 43
     Align = alTop
     Caption = 'Nome'
     TabOrder = 1
+    ExplicitWidth = 285
+    DesignSize = (
+      353
+      43)
     object edtNome: TEdit
       Left = 3
       Top = 17
-      Width = 279
+      Width = 347
       Height = 21
+      Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
+      ExplicitWidth = 279
     end
   end
   object GroupBox2: TGroupBox
     AlignWithMargins = True
     Left = 3
     Top = 101
-    Width = 285
+    Width = 353
     Height = 43
     Align = alTop
     Caption = 'Documento'
     TabOrder = 2
+    ExplicitWidth = 285
+    DesignSize = (
+      353
+      43)
     object edtDocumento: TEdit
       Left = 3
       Top = 17
-      Width = 279
+      Width = 347
       Height = 21
+      Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
+      ExplicitWidth = 279
     end
   end
   object Panel1: TPanel
     Left = 0
     Top = 207
-    Width = 291
+    Width = 359
     Height = 41
     Align = alBottom
     TabOrder = 3
     ExplicitTop = 151
-    object btnFormatarDocumento: TSpeedButton
-      Left = 168
-      Top = 1
-      Width = 122
-      Height = 39
-      Align = alRight
-      Caption = 'Formatar Documento'
-      Flat = True
-      OnClick = btnFormatarDocumentoClick
-    end
+    ExplicitWidth = 291
     object btnNomeCompleto: TSpeedButton
       Left = 1
       Top = 1
@@ -92,24 +96,52 @@ object frmPessoa: TfrmPessoa
       Flat = True
       OnClick = btnNomeCompletoClick
     end
+    object btnFormatarDocumento: TSpeedButton
+      Left = 97
+      Top = 1
+      Width = 128
+      Height = 39
+      Align = alLeft
+      Caption = 'Formatar Documento'
+      Flat = True
+      OnClick = btnDoisClick
+    end
+    object btnBotao3: TButton
+      Left = 283
+      Top = 1
+      Width = 75
+      Height = 39
+      Align = alRight
+      Caption = 'Bot'#227'o 3'
+      TabOrder = 0
+      ExplicitLeft = 240
+      ExplicitTop = 8
+      ExplicitHeight = 25
+    end
   end
   object GroupBox3: TGroupBox
     AlignWithMargins = True
     Left = 3
     Top = 150
-    Width = 285
+    Width = 353
     Height = 43
     Align = alTop
     Caption = 'Endere'#231'o'
     TabOrder = 4
     ExplicitLeft = 6
     ExplicitTop = 109
+    ExplicitWidth = 285
+    DesignSize = (
+      353
+      43)
     object edtEndereco: TEdit
       Left = 3
       Top = 17
-      Width = 279
+      Width = 347
       Height = 21
+      Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
+      ExplicitWidth = 279
     end
   end
 end

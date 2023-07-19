@@ -119,6 +119,8 @@
         </DCCReference>
         <DCCReference Include="..\Class\uBibliotecaFuncoes.pas"/>
         <DCCReference Include="..\Class\uControllerPessoa.pas"/>
+        <DCCReference Include="..\Interfaces\uInterfaces.MinhaInterface.pas"/>
+        <DCCReference Include="..\Model Interface\uModel.MinhaInterface.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -145,6 +147,12 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="Win32\Release\Prj_Vendas.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>Prj_Vendas.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\Prj_Vendas.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Prj_Vendas.exe</RemoteName>

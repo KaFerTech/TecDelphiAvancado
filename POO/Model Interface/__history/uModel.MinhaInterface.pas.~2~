@@ -1,0 +1,17 @@
+unit uModel.MinhaInterface;
+
+interface
+
+uses
+  uInterfaces.MinhaInterface;
+
+  //TInterfacedObject -> ARC = contador automatico de referencia
+
+type
+  TModelMinhaInterface = class(TInterfacedObject, iMinhaInterface)
+
+  end;
+
+implementation
+
+end.

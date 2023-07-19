@@ -1,0 +1,34 @@
+unit uViewCalculadora;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uInterfaceCalculadora, uModelSoma;
+
+type
+  TfrmCalculadora = class(TForm)
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCalculadora: TfrmCalculadora;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCalculadora.Button1Click(Sender: TObject);
+var
+  vSomar : iCalculadora;
+begin
+  vSomar := TModelSoma.Create;
+  ShowMessage(vSomar.getResultado([1,2,3]));
+end;
+
+end.

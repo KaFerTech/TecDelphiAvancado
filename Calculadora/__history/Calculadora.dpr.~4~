@@ -1,0 +1,19 @@
+program Calculadora;
+
+uses
+  Vcl.Forms,
+  uViewCalculadora in 'uViewCalculadora.pas' {Form1},
+  uInterfaceCalculadora in 'uInterfaceCalculadora.pas',
+  uModelSoma in 'uModelSoma.pas',
+  uModelSubtrai in 'uModelSubtrai.pas',
+  uModelMultiplica in 'uModelMultiplica.pas',
+  uModelDivide in 'uModelDivide.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

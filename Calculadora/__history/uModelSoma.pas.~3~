@@ -1,0 +1,38 @@
+unit uModelSoma;
+
+interface
+
+uses
+  System.Classes, uInterfaceCalculadora, System.SysUtils;
+
+type
+  TModelSoma = class(TInterfacedObject, iCalculadora)
+  private
+    fLista : TStringList;
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    function getResultado(const pValores : array of double) : double;
+  end;
+
+implementation
+
+{ TModelSoma }
+
+constructor TModelSoma.Create;
+begin
+  fLista := TStringList.Create;
+end;
+
+destructor TModelSoma.Destroy;
+begin
+  FreeAndNil(fLista);
+end;
+
+function TModelSoma.getResultado(const pValores: array of double): double;
+begin
+  fLista.Add(pValores);
+end;
+
+end.
