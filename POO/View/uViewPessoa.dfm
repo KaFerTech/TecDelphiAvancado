@@ -2,7 +2,7 @@ object frmPessoa: TfrmPessoa
   Left = 0
   Top = 0
   Caption = 'Pessoa'
-  ClientHeight = 192
+  ClientHeight = 248
   ClientWidth = 291
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -11,6 +11,7 @@ object frmPessoa: TfrmPessoa
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnClose = FormClose
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
@@ -65,11 +66,12 @@ object frmPessoa: TfrmPessoa
   end
   object Panel1: TPanel
     Left = 0
-    Top = 151
+    Top = 207
     Width = 291
     Height = 41
     Align = alBottom
     TabOrder = 3
+    ExplicitTop = 151
     object btnFormatarDocumento: TSpeedButton
       Left = 168
       Top = 1
@@ -89,6 +91,25 @@ object frmPessoa: TfrmPessoa
       Caption = 'Nome Completo'
       Flat = True
       OnClick = btnNomeCompletoClick
+    end
+  end
+  object GroupBox3: TGroupBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 150
+    Width = 285
+    Height = 43
+    Align = alTop
+    Caption = 'Endere'#231'o'
+    TabOrder = 4
+    ExplicitLeft = 6
+    ExplicitTop = 109
+    object edtEndereco: TEdit
+      Left = 3
+      Top = 17
+      Width = 279
+      Height = 21
+      TabOrder = 0
     end
   end
 end

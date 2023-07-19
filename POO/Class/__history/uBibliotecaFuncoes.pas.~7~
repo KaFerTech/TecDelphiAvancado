@@ -1,0 +1,40 @@
+unit uBibliotecaFuncoes;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  TUtils = class
+    class function getNumeros(const pString : String) : string;
+  end;
+
+implementation
+
+{ TUtils }
+
+class function TUtils.getNumeros(const pString : String) : string;
+var
+  vCount   : Integer;
+  vTamanho : Integer;
+  vStr     : String;
+  vResult  : string;
+begin
+  vTamanho := pString.Trim.Length;
+
+  //'123a-456';
+
+  for vCount := 0 to vTamanho do
+  begin
+    vStr := pString[vCount];
+
+    if StrToIntDef(vStr, -1) > -1 then
+      vResult := vResult + vStr;
+  end;
+
+  Result := vResult;
+
+end;
+
+end.

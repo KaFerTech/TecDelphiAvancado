@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <MainSource>Prj_Vendas.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
@@ -102,11 +102,9 @@
         </DelphiCompile>
         <DCCReference Include="..\View\uViewVendas.pas">
             <Form>frmVendas</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="..\Data Module\unDmVendas.pas">
             <Form>dmVendas</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="..\Class\uCliente.pas"/>
@@ -118,9 +116,9 @@
         <DCCReference Include="uMascarasDocumento.pas"/>
         <DCCReference Include="..\View\uViewPessoa.pas">
             <Form>frmPessoa</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="..\Class\uBibliotecaFuncoes.pas"/>
+        <DCCReference Include="..\Class\uControllerPessoa.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

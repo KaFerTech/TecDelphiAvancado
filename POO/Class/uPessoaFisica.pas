@@ -13,13 +13,8 @@ type
     fCPF: string;
     function getCPF : String;
   public
-//    constructor Create; Overload;
-//    constructor Create(pCPF : string); Overload;
-
-//    constructor Create;
-//
-//    destructor Destroy; override;
-
+    constructor Create;
+    destructor Destroy; override;
     property CPF : string read getCPF;
 
     function DocumentoFormatado(const pDocumento : string) : string; override;
@@ -27,6 +22,11 @@ type
   end;
 
 implementation
+
+constructor TPessoaFisica.Create;
+begin
+  fLista := TStringList.Create;
+end;
 
 //constructor TPessoaFisica.Create;
 //begin
@@ -40,9 +40,18 @@ implementation
 
 function TPessoaFisica.DadosCompletos: string;
 begin
-  Result := 'Nome da pessoa física: ' + Nome + ' - ' + CPF;
+  Result := sLineBreak +
+            'Nome da pessoa física: ' + Nome + sLineBreak +
+            'CPF: ' + CPF + sLineBreak +
+            'Endereço: ' + Endereco;
 end;
 
+destructor TPessoaFisica.Destroy;
+begin
+  setNilObjeto(fLista);
+
+  inherited;
+end;
 
 function TPessoaFisica.DocumentoFormatado(const pDocumento : string): string;
 begin

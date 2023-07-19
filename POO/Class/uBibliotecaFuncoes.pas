@@ -25,15 +25,18 @@ begin
 
   //'123a-456';
 
-  for vCount := 0 to vTamanho do
+  if vTamanho > 0 then
   begin
-    vStr := pString[vCount];
+    for vCount := 0 to vTamanho do
+    begin
+      vStr := pString[vCount];
 
-    if StrToIntDef(vStr, -1) > -1 then
-      vResult := vResult + vStr;
+      if StrToIntDef(vStr, -1) > -1 then
+        vResult := vResult + vStr;
+    end;
+
+    Result := vResult;
   end;
-
-  Result := vResult;
 
 end;
 

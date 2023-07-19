@@ -1,0 +1,56 @@
+unit uItemVenda;
+
+interface
+
+uses
+  System.SysUtils, uBaseClass;
+
+type
+  TItemVenda = class(TBaseClass)
+  private
+    FQtde: Integer;
+    FNomeProduto: string;
+    FValorUnitário: Currency;
+    procedure SetNomeProduto(const Value: string);
+    procedure SetQtde(const Value: Integer);
+    procedure SetValorUnitário(const Value: Currency);
+    function getValorTotalItem: Currency;
+  public
+    property NomeProduto : string read FNomeProduto write SetNomeProduto;
+    property ValorUnitário : Currency read FValorUnitário write SetValorUnitário;
+    property Qtde : Integer read FQtde write SetQtde;
+
+    property ValorTotalItem : Currency read getValorTotalItem;
+  end;
+
+implementation
+
+{ TItemVenda }
+
+function TItemVenda.getValorTotalItem: Currency;
+begin
+  Result := FQtde * FValorUnitário;
+end;
+
+procedure TItemVenda.SetNomeProduto(const Value : string);
+begin
+  ValidarValor(Value, 'O campo Produto é obrigatório!');
+
+  FNomeProduto := Value;
+end;
+
+procedure TItemVenda.SetQtde(const Value: Integer);
+begin
+  ValidarValor(Value, 'O campo Quantidade é obrigatório!');
+
+  FQtde := Value;
+end;
+
+procedure TItemVenda.SetValorUnitário(const Value: Currency);
+begin
+  ValidarValor(Value, 'O campo Valor Unitário é obrigatório!');
+
+  FValorUnitário := Value;
+end;
+
+end.

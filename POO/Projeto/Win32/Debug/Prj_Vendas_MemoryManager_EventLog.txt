@@ -1,0 +1,933 @@
+
+--------------------------------2023/7/19 8:42:50--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x1DEC, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+4083E4 [System.pas][System][TObject.Create][17445]
+5643C0 [Vcl.Controls.pas][Vcl.Controls][Controls.TWinControl.GetClientRect][12450]
+6CDCC0 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+618A15 [Vcl.Forms.pas][Vcl.Forms][Forms.TApplication.CreateForm][10866]
+
+The block is currently used for an object of class: uPessoaFisica.TPessoaFisica
+
+The allocation number is: 1891
+
+Current memory dump of 256 bytes starting at pointer address 7F941200:
+E4 CB 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 A5 2B 4C 79
+80 80 80 80 80 80 80 80 00 00 00 00 70 A5 93 7F 00 00 00 00 00 00 00 00 E0 8B 41 00 00 00 00 00
+64 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 E4 83 40 00 D5 DC 6C 00 C7 D7 60 00 D3 D3 60 00
+08 8B 40 00 84 D3 60 00 15 8A 61 00 F6 78 6D 00 EC 1D 00 00 EC 1D 00 00 C6 72 40 00 5D A3 40 00
+F2 FB 55 00 8A C8 60 00 10 06 61 00 33 FC 55 00 3E A7 47 00 36 93 9A 01 9A C8 60 00 1F 0C 61 00
+FC 01 56 00 18 00 00 00 B0 04 02 00 4C C2 61 88 A0 CF 6C 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 B3 3D 9E 77 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 67 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+‰  À  l  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  •  +  L  y
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  p  •  ì    .  .  .  .  .  .  .  .  ‡  ã  A  .  .  .  .  .
+d  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  ‰  É  @  .  ’  ‹  l  .  «  ◊  `  .  ”  ”  `  .
+.  ã  @  .  Ñ  ”  `  .  .  ä  a  .  ˆ  x  m  .  Ï  .  .  .  Ï  .  .  .  ∆  r  @  .  ]  £  @  .
+Ú  ˚  U  .  ä  »  `  .  .  .  a  .  3  ¸  U  .  >  ß  G  .  6  ì  ö  .  ö  »  `  .  .  .  a  .
+¸  .  V  .  .  .  .  .  ∞  .  .  .  L  ¬  a  à  †  œ  l  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  ≥  =  û  w  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  g  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:42:50--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x1DEC, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+4083E4 [System.pas][System][TObject.Create][17445]
+6CDCD5 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][102]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+618A15 [Vcl.Forms.pas][Vcl.Forms][Forms.TApplication.CreateForm][10866]
+6D78F6 
+
+The block is currently used for an object of class: uPessoaJuridica.TPessoaJuridica
+
+The allocation number is: 1892
+
+Current memory dump of 256 bytes starting at pointer address 7F9412B0:
+A0 CF 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 B3 3D 9E 77 80 80 80 80
+80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+67 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 6F 93 55 00 E6 5C 53 00 39 99 55 00 D0 E1 55 00
+9F C7 60 00 0E D2 60 00 15 8A 61 00 0E 79 6D 00 EC 1D 00 00 EC 1D 00 00 1D 83 40 00 E5 8A 40 00
+80 0C 47 00 13 84 40 00 04 9B 55 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00 8A E4 55 00
+70 C8 60 00 24 00 00 00 08 CE 54 00 97 20 AD 86 84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 68 DF 52 79 00 00 00 00 E1 12 94 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+†  œ  l  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ≥  =  û  w  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+g  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  o  ì  U  .  Ê  \  S  .  9  ô  U  .  –  ·  U  .
+ü  «  `  .  .  “  `  .  .  ä  a  .  .  y  m  .  Ï  .  .  .  Ï  .  .  .  .  É  @  .  Â  ä  @  .
+Ä  .  G  .  .  Ñ  @  .  .  õ  U  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .  ä  ‰  U  .
+p  »  `  .  $  .  .  .  .  Œ  T  .  ó     ≠  Ü  Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  h  ﬂ  R  y  .  .  .  .  ·  .  î  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  h  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:42:50--------------------------------
+This application has leaked memory. The small block leaks are (excluding expected leaks registered by pointer):
+
+21 - 36 bytes: uPessoaJuridica.TPessoaJuridica x 1, uPessoaFisica.TPessoaFisica x 1
+
+Note: Memory leak detail is logged to a text file in the same folder as this application. To disable this memory leak check, undefine "EnableMemoryLeakReporting".
+
+--------------------------------2023/7/19 8:43:03--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0xA04, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+4083E4 [System.pas][System][TObject.Create][17445]
+5643C0 [Vcl.Controls.pas][Vcl.Controls][Controls.TWinControl.GetClientRect][12450]
+6CDCC0 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+618A15 [Vcl.Forms.pas][Vcl.Forms][Forms.TApplication.CreateForm][10866]
+
+The block is currently used for an object of class: uPessoaFisica.TPessoaFisica
+
+The allocation number is: 1891
+
+Current memory dump of 256 bytes starting at pointer address 7F941200:
+E4 CB 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 75 53 4C 79
+80 80 80 80 80 80 80 80 00 00 00 00 70 A5 93 7F 00 00 00 00 00 00 00 00 E0 8B 41 00 00 00 00 00
+64 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 E4 83 40 00 D5 DC 6C 00 C7 D7 60 00 D3 D3 60 00
+08 8B 40 00 84 D3 60 00 15 8A 61 00 F6 78 6D 00 04 0A 00 00 04 0A 00 00 C6 72 40 00 5D A3 40 00
+F2 FB 55 00 8A C8 60 00 10 06 61 00 33 FC 55 00 3E A7 47 00 36 93 9A 01 9A C8 60 00 1F 0C 61 00
+FC 01 56 00 18 00 00 00 B0 04 02 00 7C 9A 61 88 A0 CF 6C 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 83 65 9E 77 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 67 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+‰  À  l  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  u  S  L  y
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  p  •  ì    .  .  .  .  .  .  .  .  ‡  ã  A  .  .  .  .  .
+d  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  ‰  É  @  .  ’  ‹  l  .  «  ◊  `  .  ”  ”  `  .
+.  ã  @  .  Ñ  ”  `  .  .  ä  a  .  ˆ  x  m  .  .  .  .  .  .  .  .  .  ∆  r  @  .  ]  £  @  .
+Ú  ˚  U  .  ä  »  `  .  .  .  a  .  3  ¸  U  .  >  ß  G  .  6  ì  ö  .  ö  »  `  .  .  .  a  .
+¸  .  V  .  .  .  .  .  ∞  .  .  .  |  ö  a  à  †  œ  l  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  É  e  û  w  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  g  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:43:03--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0xA04, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+4083E4 [System.pas][System][TObject.Create][17445]
+6CDCD5 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][102]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+618A15 [Vcl.Forms.pas][Vcl.Forms][Forms.TApplication.CreateForm][10866]
+6D78F6 
+
+The block is currently used for an object of class: uPessoaJuridica.TPessoaJuridica
+
+The allocation number is: 1892
+
+Current memory dump of 256 bytes starting at pointer address 7F9412B0:
+A0 CF 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 83 65 9E 77 80 80 80 80
+80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+67 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 6F 93 55 00 E6 5C 53 00 39 99 55 00 D0 E1 55 00
+9F C7 60 00 0E D2 60 00 15 8A 61 00 0E 79 6D 00 04 0A 00 00 04 0A 00 00 1D 83 40 00 E5 8A 40 00
+80 0C 47 00 13 84 40 00 04 9B 55 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00 8A E4 55 00
+70 C8 60 00 24 00 00 00 08 CE 54 00 C7 F8 AC 86 84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 38 07 53 79 00 00 00 00 E1 12 94 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+†  œ  l  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  É  e  û  w  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+g  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  o  ì  U  .  Ê  \  S  .  9  ô  U  .  –  ·  U  .
+ü  «  `  .  .  “  `  .  .  ä  a  .  .  y  m  .  .  .  .  .  .  .  .  .  .  É  @  .  Â  ä  @  .
+Ä  .  G  .  .  Ñ  @  .  .  õ  U  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .  ä  ‰  U  .
+p  »  `  .  $  .  .  .  .  Œ  T  .  «  ¯  ¨  Ü  Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  8  .  S  y  .  .  .  .  ·  .  î  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  h  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:43:03--------------------------------
+This application has leaked memory. The small block leaks are (excluding expected leaks registered by pointer):
+
+21 - 36 bytes: uPessoaJuridica.TPessoaJuridica x 1, uPessoaFisica.TPessoaFisica x 1
+
+Note: Memory leak detail is logged to a text file in the same folder as this application. To disable this memory leak check, undefine "EnableMemoryLeakReporting".
+
+--------------------------------2023/7/19 8:43:14--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x15E4, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+4083E4 [System.pas][System][TObject.Create][17445]
+5643C0 [Vcl.Controls.pas][Vcl.Controls][Controls.TWinControl.GetClientRect][12450]
+6CDCC0 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+618A15 [Vcl.Forms.pas][Vcl.Forms][Forms.TApplication.CreateForm][10866]
+
+The block is currently used for an object of class: uPessoaFisica.TPessoaFisica
+
+The allocation number is: 1891
+
+Current memory dump of 256 bytes starting at pointer address 7F941200:
+E4 CB 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 B5 3B 4C 79
+80 80 80 80 80 80 80 80 00 00 00 00 70 A5 93 7F 00 00 00 00 00 00 00 00 E0 8B 41 00 00 00 00 00
+64 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 E4 83 40 00 D5 DC 6C 00 C7 D7 60 00 D3 D3 60 00
+08 8B 40 00 84 D3 60 00 15 8A 61 00 F6 78 6D 00 E4 15 00 00 E4 15 00 00 C6 72 40 00 5D A3 40 00
+F2 FB 55 00 8A C8 60 00 10 06 61 00 33 FC 55 00 3E A7 47 00 36 93 96 01 9A C8 60 00 1F 0C 61 00
+FC 01 56 00 18 00 00 00 B0 04 02 00 3C B2 5D 88 A0 CF 6C 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 C3 4D A2 77 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 67 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+‰  À  l  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  µ  ;  L  y
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  p  •  ì    .  .  .  .  .  .  .  .  ‡  ã  A  .  .  .  .  .
+d  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  ‰  É  @  .  ’  ‹  l  .  «  ◊  `  .  ”  ”  `  .
+.  ã  @  .  Ñ  ”  `  .  .  ä  a  .  ˆ  x  m  .  ‰  .  .  .  ‰  .  .  .  ∆  r  @  .  ]  £  @  .
+Ú  ˚  U  .  ä  »  `  .  .  .  a  .  3  ¸  U  .  >  ß  G  .  6  ì  ñ  .  ö  »  `  .  .  .  a  .
+¸  .  V  .  .  .  .  .  ∞  .  .  .  <  ≤  ]  à  †  œ  l  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  √  M  ¢  w  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  g  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:43:14--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x15E4, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+4083E4 [System.pas][System][TObject.Create][17445]
+6CDCD5 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][102]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+618A15 [Vcl.Forms.pas][Vcl.Forms][Forms.TApplication.CreateForm][10866]
+6D78F6 
+
+The block is currently used for an object of class: uPessoaJuridica.TPessoaJuridica
+
+The allocation number is: 1892
+
+Current memory dump of 256 bytes starting at pointer address 7F9412B0:
+A0 CF 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C3 4D A2 77 80 80 80 80
+80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+67 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 6F 93 55 00 E6 5C 53 00 39 99 55 00 D0 E1 55 00
+9F C7 60 00 0E D2 60 00 15 8A 61 00 0E 79 6D 00 E4 15 00 00 E4 15 00 00 1D 83 40 00 E5 8A 40 00
+80 0C 47 00 13 84 40 00 04 9B 55 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00 8A E4 55 00
+70 C8 60 00 24 00 00 00 08 CE 54 00 87 10 AD 86 84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 78 EF 52 79 00 00 00 00 E1 12 94 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+†  œ  l  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  √  M  ¢  w  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+g  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  o  ì  U  .  Ê  \  S  .  9  ô  U  .  –  ·  U  .
+ü  «  `  .  .  “  `  .  .  ä  a  .  .  y  m  .  ‰  .  .  .  ‰  .  .  .  .  É  @  .  Â  ä  @  .
+Ä  .  G  .  .  Ñ  @  .  .  õ  U  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .  ä  ‰  U  .
+p  »  `  .  $  .  .  .  .  Œ  T  .  á  .  ≠  Ü  Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  x  Ô  R  y  .  .  .  .  ·  .  î  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  h  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:43:14--------------------------------
+This application has leaked memory. The small block leaks are (excluding expected leaks registered by pointer):
+
+21 - 36 bytes: uPessoaJuridica.TPessoaJuridica x 1, uPessoaFisica.TPessoaFisica x 1
+
+Note: Memory leak detail is logged to a text file in the same folder as this application. To disable this memory leak check, undefine "EnableMemoryLeakReporting".
+
+--------------------------------2023/7/19 8:51:36--------------------------------
+A memory block has been leaked. The size is: 20
+
+This block was allocated by thread 0x1810, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+40A2A3 [System.pas][System][@NewUnicodeString$qqri][25168]
+40A730 [System.pas][System][@UStrAsg$qqrr20System.UnicodeStringx20System.UnicodeString][26152]
+471A0C [System.Classes.pas][System.Classes][Classes.TStrings.Create][6372]
+474521 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7679]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CDDD0 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 1893
+
+Current memory dump of 256 bytes starting at pointer address 7F8EB910:
+B0 04 02 00 01 00 00 00 02 00 00 00 0D 00 0A 00 00 00 D6 88 F0 78 80 80 00 00 00 00 D1 BE 8E 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 51 0F 00 00 AA 72 40 00 1B A9 42 00 29 A9 42 00
+ED 30 56 00 8D 21 61 00 1D 79 F2 76 2D C7 55 00 86 08 F8 76 FB FB F7 76 D0 FB F7 76 46 3D EE 76
+10 18 00 00 10 18 00 00 72 A9 42 00 29 9B 55 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00
+8A E4 55 00 70 C8 60 00 5D D7 60 00 13 84 40 00 BB 50 48 00 12 00 00 00 12 00 00 00 16 B9 6B D7
+84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80 80 80 E9 46 94 28 80 80 00 00 00 00 31 B9 8E 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 85 04 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+E4 83 40 00 9A 8A 40 00 24 C5 56 00 F9 D6 55 00 CA 99 55 00 D0 E1 55 00 9F C7 60 00 0E D2 60 00
+∞  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ÷  à    x  Ä  Ä  .  .  .  .  —  æ  é  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Q  .  .  .  ™  r  @  .  .  ©  B  .  )  ©  B  .
+Ì  0  V  .  ç  !  a  .  .  y  Ú  v  -  «  U  .  Ü  .  ¯  v  ˚  ˚  ˜  v  –  ˚  ˜  v  F  =  Ó  v
+.  .  .  .  .  .  .  .  r  ©  B  .  )  õ  U  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .
+ä  ‰  U  .  p  »  `  .  ]  ◊  `  .  .  Ñ  @  .  ª  P  H  .  .  .  .  .  .  .  .  .  .  π  k  ◊
+Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  È  F  î  (  Ä  Ä  .  .  .  .  1  π  é  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ö  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+‰  É  @  .  ö  ä  @  .  $  ≈  V  .  ˘  ÷  U  .     ô  U  .  –  ·  U  .  ü  «  `  .  .  “  `  .
+
+--------------------------------2023/7/19 8:51:36--------------------------------
+A memory block has been leaked. The size is: 84
+
+This block was allocated by thread 0x1810, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+474514 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7678]
+408308 [System.pas][System][TObject.NewInstance][17386]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CDDD0 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+
+The block is currently used for an object of class: System.Classes.TStringList
+
+The allocation number is: 1892
+
+Current memory dump of 256 bytes starting at pointer address 7F925E20:
+A0 A1 44 00 00 00 00 00 F0 B7 93 7F 1C B9 8E 7F 00 00 00 00 00 00 00 00 2C 00 22 00 3D 00 0E 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 92 F8 A5 7C 80 80 80 80 80 80 80 80 00 00 00 00 A1 72 92 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+C2 BB 60 00 B7 C7 60 00 0E D2 60 00 15 8A 61 00 0E 79 6D 00 29 FA 25 76 9E 7A F0 76 6E 7A F0 76
+10 18 00 00 10 18 00 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00 13 84 40 00 48 C8 60 00
+5D D7 60 00 BB 50 48 00 86 B6 60 00 1B 8A 42 00 A0 A0 40 00 4C 00 00 00 60 26 60 00 DA 67 E3 E9
+84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+†  °  D  .  .  .  .  .    ∑  ì    .  π  é    .  .  .  .  .  .  .  .  ,  .  "  .  =  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  í  ¯  •  |  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  °  r  í  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  p  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+¬  ª  `  .  ∑  «  `  .  .  “  `  .  .  ä  a  .  .  y  m  .  )  ˙  %  v  û  z    v  n  z    v
+.  .  .  .  .  .  .  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .  .  Ñ  @  .  H  »  `  .
+]  ◊  `  .  ª  P  H  .  Ü  ∂  `  .  .  ä  B  .  †  †  @  .  L  .  .  .  `  &  `  .  ⁄  g  „  È
+Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+
+--------------------------------2023/7/19 8:51:36--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x1810, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+6CCDC6 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create]
+60F0F7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AlignControls][4759]
+5643C0 [Vcl.Controls.pas][Vcl.Controls][Controls.TWinControl.GetClientRect][12450]
+6CDDD0 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+
+The block is currently used for an object of class: uPessoaFisica.TPessoaFisica
+
+The allocation number is: 1891
+
+Current memory dump of 256 bytes starting at pointer address 7F941200:
+0C CC 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 20 5E 92 7F 00 00 00 00 00 00 00 00 89 85 20 79
+80 80 80 80 80 80 80 80 00 00 00 00 70 A5 93 7F 00 00 00 00 00 00 00 00 E0 8B 41 00 00 00 00 00
+66 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 E4 83 40 00 E5 DD 6C 00 C7 D7 60 00 D3 D3 60 00
+08 8B 40 00 84 D3 60 00 15 8A 61 00 F6 78 6D 00 10 18 00 00 10 18 00 00 C6 72 40 00 5D A3 40 00
+F2 FB 55 00 8A C8 60 00 10 06 61 00 33 FC 55 00 3E A7 47 00 36 93 9A 01 9A C8 60 00 1F 0C 61 00
+FC 01 56 00 18 00 00 00 B0 04 02 00 A6 B7 61 88 B0 D0 6C 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 59 48 9E 77 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 69 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+.  Ã  l  .  .  .  .  .  .  .  .  .  .  .  .  .     ^  í    .  .  .  .  .  .  .  .  â  Ö     y
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  p  •  ì    .  .  .  .  .  .  .  .  ‡  ã  A  .  .  .  .  .
+f  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  ‰  É  @  .  Â  ›  l  .  «  ◊  `  .  ”  ”  `  .
+.  ã  @  .  Ñ  ”  `  .  .  ä  a  .  ˆ  x  m  .  .  .  .  .  .  .  .  .  ∆  r  @  .  ]  £  @  .
+Ú  ˚  U  .  ä  »  `  .  .  .  a  .  3  ¸  U  .  >  ß  G  .  6  ì  ö  .  ö  »  `  .  .  .  a  .
+¸  .  V  .  .  .  .  .  ∞  .  .  .  ¶  ∑  a  à  ∞  –  l  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  Y  H  û  w  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  i  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:51:36--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x1810, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+4083E4 [System.pas][System][TObject.Create][17445]
+6CDDE5 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][102]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+618A15 [Vcl.Forms.pas][Vcl.Forms][Forms.TApplication.CreateForm][10866]
+6D78F6 
+
+The block is currently used for an object of class: uPessoaJuridica.TPessoaJuridica
+
+The allocation number is: 1894
+
+Current memory dump of 256 bytes starting at pointer address 7F9412B0:
+B0 D0 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 59 48 9E 77 80 80 80 80
+80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+69 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 6F 93 55 00 E6 5C 53 00 39 99 55 00 D0 E1 55 00
+9F C7 60 00 0E D2 60 00 15 8A 61 00 0E 79 6D 00 10 18 00 00 10 18 00 00 1D 83 40 00 E5 8A 40 00
+80 0C 47 00 13 84 40 00 04 9B 55 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00 8A E4 55 00
+70 C8 60 00 24 00 00 00 08 CE 54 00 E1 14 AD 86 84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 1E EB 52 79 00 00 00 00 E1 12 94 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6A 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+∞  –  l  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Y  H  û  w  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+i  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  o  ì  U  .  Ê  \  S  .  9  ô  U  .  –  ·  U  .
+ü  «  `  .  .  “  `  .  .  ä  a  .  .  y  m  .  .  .  .  .  .  .  .  .  .  É  @  .  Â  ä  @  .
+Ä  .  G  .  .  Ñ  @  .  .  õ  U  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .  ä  ‰  U  .
+p  »  `  .  $  .  .  .  .  Œ  T  .  ·  .  ≠  Ü  Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  Î  R  y  .  .  .  .  ·  .  î  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  j  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:51:36--------------------------------
+This application has leaked memory. The small block leaks are (excluding expected leaks registered by pointer):
+
+13 - 20 bytes: UnicodeString x 1
+21 - 36 bytes: uPessoaJuridica.TPessoaJuridica x 1, uPessoaFisica.TPessoaFisica x 1
+69 - 84 bytes: System.Classes.TStringList x 1
+
+Note: Memory leak detail is logged to a text file in the same folder as this application. To disable this memory leak check, undefine "EnableMemoryLeakReporting".
+
+--------------------------------2023/7/19 8:55:11--------------------------------
+A memory block has been leaked. The size is: 20
+
+This block was allocated by thread 0x1884, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+40A2A3 [System.pas][System][@NewUnicodeString$qqri][25168]
+40A730 [System.pas][System][@UStrAsg$qqrr20System.UnicodeStringx20System.UnicodeString][26152]
+471A0C [System.Classes.pas][System.Classes][Classes.TStrings.Create][6372]
+474521 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7679]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CDDF4 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 1893
+
+Current memory dump of 256 bytes starting at pointer address 7F8EB910:
+B0 04 02 00 01 00 00 00 02 00 00 00 0D 00 0A 00 00 00 CA 87 F0 78 80 80 00 00 00 00 D1 BE 8E 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 0F 00 00 AA 72 40 00 1B A9 42 00 29 A9 42 00
+ED 30 56 00 8D 21 61 00 1D 79 F2 76 2D C7 55 00 86 08 F8 76 FB FB F7 76 D0 FB F7 76 46 3D EE 76
+84 18 00 00 84 18 00 00 72 A9 42 00 29 9B 55 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00
+8A E4 55 00 70 C8 60 00 5D D7 60 00 13 84 40 00 BB 50 48 00 12 00 00 00 12 00 00 00 1D BA 6B D7
+84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80 80 80 E2 45 94 28 80 80 00 00 00 00 31 B9 8E 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 85 04 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+E4 83 40 00 9A 8A 40 00 24 C5 56 00 F9 D6 55 00 CA 99 55 00 D0 E1 55 00 9F C7 60 00 0E D2 60 00
+∞  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     á    x  Ä  Ä  .  .  .  .  —  æ  é  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  p  .  .  .  ™  r  @  .  .  ©  B  .  )  ©  B  .
+Ì  0  V  .  ç  !  a  .  .  y  Ú  v  -  «  U  .  Ü  .  ¯  v  ˚  ˚  ˜  v  –  ˚  ˜  v  F  =  Ó  v
+Ñ  .  .  .  Ñ  .  .  .  r  ©  B  .  )  õ  U  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .
+ä  ‰  U  .  p  »  `  .  ]  ◊  `  .  .  Ñ  @  .  ª  P  H  .  .  .  .  .  .  .  .  .  .  ∫  k  ◊
+Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  ‚  E  î  (  Ä  Ä  .  .  .  .  1  π  é  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ö  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+‰  É  @  .  ö  ä  @  .  $  ≈  V  .  ˘  ÷  U  .     ô  U  .  –  ·  U  .  ü  «  `  .  .  “  `  .
+
+--------------------------------2023/7/19 8:55:11--------------------------------
+A memory block has been leaked. The size is: 84
+
+This block was allocated by thread 0x1884, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+474514 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7678]
+408308 [System.pas][System][TObject.NewInstance][17386]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CDDF4 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+
+The block is currently used for an object of class: System.Classes.TStringList
+
+The allocation number is: 1892
+
+Current memory dump of 256 bytes starting at pointer address 7F925E20:
+A0 A1 44 00 00 00 00 00 F0 B7 93 7F 1C B9 8E 7F 00 00 00 00 00 00 00 00 2C 00 22 00 3D 00 0E 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 FA F7 A5 7C 80 80 80 80 80 80 80 80 00 00 00 00 A1 72 92 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+C2 BB 60 00 B7 C7 60 00 0E D2 60 00 15 8A 61 00 0E 79 6D 00 29 FA 25 76 9E 7A F0 76 6E 7A F0 76
+84 18 00 00 84 18 00 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 80 0C 47 00 13 84 40 00 48 C8 60 00
+5D D7 60 00 BB 50 48 00 86 B6 60 00 1B 8A 42 00 A0 A0 40 00 4C 00 00 00 60 26 60 00 C2 68 E3 E9
+84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+†  °  D  .  .  .  .  .    ∑  ì    .  π  é    .  .  .  .  .  .  .  .  ,  .  "  .  =  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  ˙  ˜  •  |  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  °  r  í  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  p  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+¬  ª  `  .  ∑  «  `  .  .  “  `  .  .  ä  a  .  .  y  m  .  )  ˙  %  v  û  z    v  n  z    v
+Ñ  .  .  .  Ñ  .  .  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  Ä  .  G  .  .  Ñ  @  .  H  »  `  .
+]  ◊  `  .  ª  P  H  .  Ü  ∂  `  .  .  ä  B  .  †  †  @  .  L  .  .  .  `  &  `  .  ¬  h  „  È
+Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+
+--------------------------------2023/7/19 8:55:11--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x1884, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+6CCDC6 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create]
+60F0F7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AlignControls][4759]
+5643C0 [Vcl.Controls.pas][Vcl.Controls][Controls.TWinControl.GetClientRect][12450]
+6CDDF4 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.FormCreate][101]
+60D7C7 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.DoCreate][3839]
+60D3D3 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.AfterConstruction][3722]
+408B08 [System.pas][System][@AfterConstruction$qqrxp14System.TObject][18814]
+60D384 [Vcl.Forms.pas][Vcl.Forms][Forms.TCustomForm.Create][3712]
+
+The block is currently used for an object of class: uPessoaFisica.TPessoaFisica
+
+The allocation number is: 1891
+
+Current memory dump of 256 bytes starting at pointer address 7F941200:
+0C CC 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 20 5E 92 7F 00 00 00 00 00 00 00 00 7D 84 20 79
+80 80 80 80 80 80 80 80 00 00 00 00 61 E1 93 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+1C 0F 00 00 19 73 40 00 61 C6 40 00 A2 C7 40 00 87 F8 46 00 07 F6 46 00 A1 F3 46 00 27 72 61 00
+F1 7D CA 75 EA BC C9 75 FC 72 61 00 66 B6 60 00 84 18 00 00 84 18 00 00 C6 72 40 00 FC C8 40 00
+29 C5 40 00 50 8E 41 00 A2 C7 40 00 87 F8 46 00 E1 F3 46 00 7E F3 46 00 13 84 40 00 03 6C 61 00
+13 84 40 00 18 00 00 00 00 00 00 00 07 B7 DE 70 84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 F8 48 21 8F 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 31 FC 93 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 69 07 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+.  Ã  l  .  .  .  .  .  .  .  .  .  .  .  .  .     ^  í    .  .  .  .  .  .  .  .  }  Ñ     y
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  a  ·  ì    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  s  @  .  a  ∆  @  .  ¢  «  @  .  á  ¯  F  .  .  ˆ  F  .  °  Û  F  .  '  r  a  .
+Ò  }     u  Í  º  …  u  ¸  r  a  .  f  ∂  `  .  Ñ  .  .  .  Ñ  .  .  .  ∆  r  @  .  ¸  »  @  .
+)  ≈  @  .  P  é  A  .  ¢  «  @  .  á  ¯  F  .  ·  Û  F  .  ~  Û  F  .  .  Ñ  @  .  .  l  a  .
+.  Ñ  @  .  .  .  .  .  .  .  .  .  .  ∑  ﬁ  p  Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  ¯  H  !  è  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  1  ¸  ì  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  i  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+
+--------------------------------2023/7/19 8:55:11--------------------------------
+This application has leaked memory. The small block leaks are (excluding expected leaks registered by pointer):
+
+13 - 20 bytes: UnicodeString x 1
+21 - 36 bytes: uPessoaFisica.TPessoaFisica x 1
+69 - 84 bytes: System.Classes.TStringList x 1
+
+Note: Memory leak detail is logged to a text file in the same folder as this application. To disable this memory leak check, undefine "EnableMemoryLeakReporting".
+
+--------------------------------2023/7/19 9:17:19--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x215C, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+40A2A3 [System.pas][System][@NewUnicodeString$qqri][25168]
+40A4D4 [System.pas][System][@UStrFromPWCharLen$qqrr20System.UnicodeStringpbi][25846]
+55AE8B [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6308]
+6CDD77 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDCC6 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnFormatarDocumentoClick][50]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+67683D [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.Click][1551]
+676827 [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.MouseUp][1544]
+55D0B9 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.DoMouseUp][7664]
+55D147 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.WMLButtonUp][7677]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 4102
+
+Current memory dump of 256 bytes starting at pointer address 7F85C960:
+B0 04 02 00 01 00 00 00 0A 00 00 00 64 00 73 00 61 00 64 00 73 00 61 00 20 00 64 00 73 00 61 00
+00 00 6E 25 49 F9 80 80 00 00 00 00 D0 A9 85 7F 00 00 00 00 00 00 00 00 E0 8B 41 00 00 00 00 00
+07 10 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00 C6 CD 6C 00 81 C3 55 00 26 D7 6C 00 A2 AE 55 00
+89 DD 6C 00 C6 DC 6C 00 89 CC 55 00 3D 68 67 00 5C 21 00 00 5C 21 00 00 C6 72 40 00 C2 A3 40 00
+D5 50 57 00 B5 75 56 00 AF 13 56 00 BC 13 C4 75 AB EA 43 75 E0 5B 56 00 2D C7 55 00 67 28 EE 76
+9A 28 EE 76 1C 00 00 00 B0 04 02 00 98 96 BC 5E 0C CC 6C 00 6C C9 85 7F 00 00 00 00 CC CA 85 7F
+40 72 92 7F 0C 49 87 7F 00 00 00 00 67 69 43 A1 80 80 80 80 80 80 80 80 00 00 00 00 D0 A9 85 7F
+00 00 00 00 00 00 00 00 E0 8B 41 00 00 00 00 00 0C 10 00 00 EE 8E 41 00 E7 72 40 00 B1 B0 40 00
+∞  .  .  .  .  .  .  .  .  .  .  .  d  .  s  .  a  .  d  .  s  .  a  .     .  d  .  s  .  a  .
+.  .  n  %  I  ˘  Ä  Ä  .  .  .  .  –  ©  Ö    .  .  .  .  .  .  .  .  ‡  ã  A  .  .  .  .  .
+.  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .  ∆  Õ  l  .  Å  √  U  .  &  ◊  l  .  ¢  Æ  U  .
+â  ›  l  .  ∆  ‹  l  .  â  Ã  U  .  =  h  g  .  \  !  .  .  \  !  .  .  ∆  r  @  .  ¬  £  @  .
+’  P  W  .  µ  u  V  .  Ø  .  V  .  º  .  ƒ  u  ´  Í  C  u  ‡  [  V  .  -  «  U  .  g  (  Ó  v
+ö  (  Ó  v  .  .  .  .  ∞  .  .  .  ò  ñ  º  ^  .  Ã  l  .  l  …  Ö    .  .  .  .  Ã     Ö  
+@  r  í    .  I  á    .  .  .  .  g  i  C  °  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  –  ©  Ö  
+.  .  .  .  .  .  .  .  ‡  ã  A  .  .  .  .  .  .  .  .  .  Ó  é  A  .  Á  r  @  .  ±  ∞  @  .
+
+--------------------------------2023/7/19 9:17:19--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x215C, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+6CCDC6 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create]
+55C381 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Perform][7268]
+6CD726 [uControllerPessoa.pas][uControllerPessoa][TControllerPessoa.getPessoaFisica][28]
+55AEA2 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6311]
+6CDD89 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDCC6 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnFormatarDocumentoClick][50]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+67683D [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.Click][1551]
+
+The block is currently used for an object of class: uPessoaFisica.TPessoaFisica
+
+The allocation number is: 4103
+
+Current memory dump of 256 bytes starting at pointer address 7F85CA10:
+0C CC 6C 00 6C C9 85 7F 00 00 00 00 CC CA 85 7F 40 72 92 7F 0C 49 87 7F 00 00 00 00 67 69 43 A1
+80 80 80 80 80 80 80 80 00 00 00 00 D0 A9 85 7F 00 00 00 00 00 00 00 00 E0 8B 41 00 00 00 00 00
+0C 10 00 00 EE 8E 41 00 E7 72 40 00 B1 B0 40 00 32 B1 40 00 83 D5 6C 00 B0 DD 6C 00 C6 DC 6C 00
+89 CC 55 00 3D 68 67 00 27 68 67 00 B9 D0 55 00 5C 21 00 00 5C 21 00 00 C6 72 40 00 C2 A3 40 00
+D5 50 57 00 B5 75 56 00 AF 13 56 00 BC 13 C4 75 AB EA 43 75 E0 5B 56 00 2D C7 55 00 67 28 EE 76
+9A 28 EE 76 24 00 00 00 B0 04 02 00 45 72 A3 5E B0 04 02 00 01 00 00 00 0B 00 00 00 31 00 32 00
+33 00 31 00 32 00 33 00 31 00 32 00 33 00 31 00 32 00 00 00 BA 8D 5C A1 00 00 00 00 F1 BF 85 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7C 10 00 00 19 73 40 00 61 C6 40 00 A2 C7 40 00
+.  Ã  l  .  l  …  Ö    .  .  .  .  Ã     Ö    @  r  í    .  I  á    .  .  .  .  g  i  C  °
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  –  ©  Ö    .  .  .  .  .  .  .  .  ‡  ã  A  .  .  .  .  .
+.  .  .  .  Ó  é  A  .  Á  r  @  .  ±  ∞  @  .  2  ±  @  .  É  ’  l  .  ∞  ›  l  .  ∆  ‹  l  .
+â  Ã  U  .  =  h  g  .  '  h  g  .  π  –  U  .  \  !  .  .  \  !  .  .  ∆  r  @  .  ¬  £  @  .
+’  P  W  .  µ  u  V  .  Ø  .  V  .  º  .  ƒ  u  ´  Í  C  u  ‡  [  V  .  -  «  U  .  g  (  Ó  v
+ö  (  Ó  v  $  .  .  .  ∞  .  .  .  E  r  £  ^  ∞  .  .  .  .  .  .  .  .  .  .  .  1  .  2  .
+3  .  1  .  2  .  3  .  1  .  2  .  3  .  1  .  2  .  .  .  ∫  ç  \  °  .  .  .  .  Ò  ø  Ö  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  |  .  .  .  .  s  @  .  a  ∆  @  .  ¢  «  @  .
+
+--------------------------------2023/7/19 9:17:19--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x215C, and the stack trace (return addresses) at the time was:
+418EEE [FastMM4.pas][FastMM4][DebugReallocMem$qqrpvi][9889]
+4072E7 [System.pas][System][@ReallocMem$qqrrpvi][4913]
+40B0B1 [System.pas][System][@UStrSetLength$qqrr20System.UnicodeStringi][30446]
+40B132 [System.pas][System][@UStrCat$qqrr20System.UnicodeStringx20System.UnicodeString][30559]
+6CD583 [uBibliotecaFuncoes.pas][uBibliotecaFuncoes][TUtils.getNumeros][33]
+6CDDB0 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][65]
+6CDCC6 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnFormatarDocumentoClick][50]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+67683D [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.Click][1551]
+676827 [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.MouseUp][1544]
+55D0B9 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.DoMouseUp][7664]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 4108
+
+Current memory dump of 256 bytes starting at pointer address 7F85CAC0:
+B0 04 02 00 01 00 00 00 0B 00 00 00 31 00 32 00 33 00 31 00 32 00 33 00 31 00 32 00 33 00 31 00
+32 00 00 00 BA 8D 5C A1 00 00 00 00 F1 BF 85 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+7C 10 00 00 19 73 40 00 61 C6 40 00 A2 C7 40 00 87 F8 46 00 07 F6 46 00 A1 F3 46 00 27 72 61 00
+F1 7D CA 75 EA BC C9 75 FC 72 61 00 66 B6 60 00 5C 21 00 00 5C 21 00 00 C6 72 40 00 FC C8 40 00
+29 C5 40 00 50 8E 41 00 A2 C7 40 00 87 F8 46 00 E1 F3 46 00 7E F3 46 00 13 84 40 00 03 6C 61 00
+13 84 40 00 18 00 00 00 00 00 00 00 D7 82 D0 70 84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 28 7D 2F 8F 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 51 CC 85 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7A 10 00 00 AA 72 40 00 A3 A2 40 00 D4 A4 40 00
+∞  .  .  .  .  .  .  .  .  .  .  .  1  .  2  .  3  .  1  .  2  .  3  .  1  .  2  .  3  .  1  .
+2  .  .  .  ∫  ç  \  °  .  .  .  .  Ò  ø  Ö    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+|  .  .  .  .  s  @  .  a  ∆  @  .  ¢  «  @  .  á  ¯  F  .  .  ˆ  F  .  °  Û  F  .  '  r  a  .
+Ò  }     u  Í  º  …  u  ¸  r  a  .  f  ∂  `  .  \  !  .  .  \  !  .  .  ∆  r  @  .  ¸  »  @  .
+)  ≈  @  .  P  é  A  .  ¢  «  @  .  á  ¯  F  .  ·  Û  F  .  ~  Û  F  .  .  Ñ  @  .  .  l  a  .
+.  Ñ  @  .  .  .  .  .  .  .  .  .  ◊  Ç  –  p  Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  (  }  /  è  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  Q  Ã  Ö  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  z  .  .  .  ™  r  @  .  £  ¢  @  .  ‘  §  @  .
+
+--------------------------------2023/7/19 9:17:19--------------------------------
+A memory block has been leaked. The size is: 52
+
+This block was allocated by thread 0x215C, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+40A2A3 [System.pas][System][@NewUnicodeString$qqri][25168]
+40B0DB [System.pas][System][@UStrSetLength$qqrr20System.UnicodeStringi][30474]
+40B132 [System.pas][System][@UStrCat$qqrr20System.UnicodeStringx20System.UnicodeString][30559]
+6255BD [System.MaskUtils.pas][System.MaskUtils][Maskutils.MaskDoFormatText$qqrx20System.UnicodeStringt1b][203]
+625EF2 [System.MaskUtils.pas][System.MaskUtils][Maskutils.FormatMaskText$qqrx20System.UnicodeStringt1][441]
+6CCF2B [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.DocumentoFormatado][55]
+6CCFDE [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.getCPF][62]
+6CDCDC [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnFormatarDocumentoClick][51]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+67683D [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.Click][1551]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 4134
+
+Current memory dump of 256 bytes starting at pointer address 7F874900:
+B0 04 02 00 01 00 00 00 0E 00 00 00 31 00 32 00 33 00 2E 00 31 00 32 00 33 00 2E 00 31 00 32 00
+33 00 2D 00 31 00 32 00 00 00 15 5E 78 78 80 80 80 80 80 80 80 80 80 80 00 00 00 00 01 4A 87 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2A 10 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+31 19 47 00 08 83 40 00 1F DF 58 00 06 FF 58 00 C6 72 40 00 92 FA 58 00 00 FB 58 00 F0 DC 6C 00
+5C 21 00 00 5C 21 00 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 61 DD 58 00 13 84 40 00 CB DF 58 00
+13 84 40 00 95 00 59 00 92 FA 58 00 00 FB 58 00 F0 DC 6C 00 2C 00 00 00 44 A9 58 00 AC 9E A6 86
+84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 53 61 59 79 80 80 80 80 80 80 80 80 00 00 00 00 41 4C 87 7F
+∞  .  .  .  .  .  .  .  .  .  .  .  1  .  2  .  3  .  .  .  1  .  2  .  3  .  .  .  1  .  2  .
+3  .  -  .  1  .  2  .  .  .  .  ^  x  x  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  .  J  á  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  *  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+1  .  G  .  .  É  @  .  .  ﬂ  X  .  .  ˇ  X  .  ∆  r  @  .  í  ˙  X  .  .  ˚  X  .    ‹  l  .
+\  !  .  .  \  !  .  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  a  ›  X  .  .  Ñ  @  .  À  ﬂ  X  .
+.  Ñ  @  .  ï  .  Y  .  í  ˙  X  .  .  ˚  X  .    ‹  l  .  ,  .  .  .  D  ©  X  .  ¨  û  ¶  Ü
+Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  S  a  Y  y  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  A  L  á  
+
+--------------------------------2023/7/19 9:17:19--------------------------------
+A memory block has been leaked. The size is: 20
+
+This block was allocated by thread 0x215C, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+40A2A3 [System.pas][System][@NewUnicodeString$qqri][25168]
+40A730 [System.pas][System][@UStrAsg$qqrr20System.UnicodeStringx20System.UnicodeString][26152]
+471A0C [System.Classes.pas][System.Classes][Classes.TStrings.Create][6372]
+474521 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7679]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CD726 [uControllerPessoa.pas][uControllerPessoa][TControllerPessoa.getPessoaFisica][28]
+55AEA2 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6311]
+6CDD89 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDCC6 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnFormatarDocumentoClick][50]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 4105
+
+Current memory dump of 256 bytes starting at pointer address 7F8EF1F0:
+B0 04 02 00 01 00 00 00 02 00 00 00 0D 00 0A 00 00 00 63 24 7E 79 80 80 00 00 00 00 31 C8 8E 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D9 0F 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+52 84 48 00 00 E2 40 00 99 5F 48 00 7E 68 57 00 D3 2C 56 00 2D C7 55 00 F8 07 BA 75 09 05 BA 75
+5C 21 00 00 5C 21 00 00 1D 83 40 00 E5 8A 40 00 B5 84 48 00 13 84 40 00 6A 4B 48 00 76 9B 55 00
+1D 83 40 00 E5 8A 40 00 80 0C 47 00 8A E4 55 00 F9 E3 55 00 14 00 00 00 3C 2D 45 00 4D 02 FB 70
+84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 B2 FD 04 8F 00 00 00 00 01 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 10 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+E3 DC 58 00 E5 8A 40 00 06 84 40 00 41 DE 58 00 65 8E 41 00 62 DE 58 00 EC DD 58 00 B4 E4 58 00
+∞  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  c  $  ~  y  Ä  Ä  .  .  .  .  1  »  é  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Ÿ  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+R  Ñ  H  .  .  ‚  @  .  ô  _  H  .  ~  h  W  .  ”  ,  V  .  -  «  U  .  ¯  .  ∫  u  .  .  ∫  u
+\  !  .  .  \  !  .  .  .  É  @  .  Â  ä  @  .  µ  Ñ  H  .  .  Ñ  @  .  j  K  H  .  v  õ  U  .
+.  É  @  .  Â  ä  @  .  Ä  .  G  .  ä  ‰  U  .  ˘  „  U  .  .  .  .  .  <  -  E  .  M  .  ˚  p
+Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  ≤  ˝  .  è  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  P  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+„  ‹  X  .  Â  ä  @  .  .  Ñ  @  .  A  ﬁ  X  .  e  é  A  .  b  ﬁ  X  .  Ï  ›  X  .  ¥  ‰  X  .
+
+--------------------------------2023/7/19 9:17:19--------------------------------
+A memory block has been leaked. The size is: 84
+
+This block was allocated by thread 0x215C, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+474514 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7678]
+408308 [System.pas][System][TObject.NewInstance][17386]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CD726 [uControllerPessoa.pas][uControllerPessoa][TControllerPessoa.getPessoaFisica][28]
+55AEA2 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6311]
+6CDD89 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDCC6 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnFormatarDocumentoClick][50]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+
+The block is currently used for an object of class: System.Classes.TStringList
+
+The allocation number is: 4104
+
+Current memory dump of 256 bytes starting at pointer address 7F927240:
+A0 A1 44 00 00 00 00 00 F0 B7 93 7F FC F1 8E 7F 00 00 00 00 00 00 00 00 2C 00 22 00 3D 00 0E 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 8E AF 71 79 80 80 80 80 80 80 80 80 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+†  °  D  .  .  .  .  .    ∑  ì    ¸  Ò  é    .  .  .  .  .  .  .  .  ,  .  "  .  =  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  é  Ø  q  y  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+
+--------------------------------2023/7/19 9:17:19--------------------------------
+This application has leaked memory. The small block leaks are (excluding expected leaks registered by pointer):
+
+13 - 20 bytes: UnicodeString x 1
+21 - 36 bytes: uPessoaFisica.TPessoaFisica x 1, UnicodeString x 2
+37 - 52 bytes: UnicodeString x 1
+69 - 84 bytes: System.Classes.TStringList x 1
+
+Note: Memory leak detail is logged to a text file in the same folder as this application. To disable this memory leak check, undefine "EnableMemoryLeakReporting".
+
+--------------------------------2023/7/19 9:17:44--------------------------------
+A memory block has been leaked. The size is: 36
+
+This block was allocated by thread 0x608, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+6CCDC6 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create]
+55C381 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Perform][7268]
+6CD726 [uControllerPessoa.pas][uControllerPessoa][TControllerPessoa.getPessoaFisica][28]
+55AEA2 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6311]
+6CDD89 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDEEE [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnNomeCompletoClick][81]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+67683D [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.Click][1551]
+
+The block is currently used for an object of class: uPessoaFisica.TPessoaFisica
+
+The allocation number is: 4003
+
+Current memory dump of 256 bytes starting at pointer address 7F85C8B0:
+0C CC 6C 00 CC 1F 87 7F 00 00 00 00 00 00 00 00 40 72 92 7F 00 00 00 00 00 00 00 00 76 36 2D F9
+80 80 80 80 80 80 80 80 00 00 00 00 F1 BF 85 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+D9 0F 00 00 19 73 40 00 61 C6 40 00 A2 C7 40 00 87 F8 46 00 07 F6 46 00 A1 F3 46 00 27 72 61 00
+F1 7D CA 75 EA BC C9 75 FC 72 61 00 66 B6 60 00 08 06 00 00 08 06 00 00 C6 72 40 00 FC C8 40 00
+29 C5 40 00 50 8E 41 00 A2 C7 40 00 87 F8 46 00 E1 F3 46 00 7E F3 46 00 13 84 40 00 03 6C 61 00
+13 84 40 00 18 00 00 00 00 00 00 00 7C 49 D0 70 84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 83 B6 2F 8F 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 F1 CA 85 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D8 0F 00 00 AA 72 40 00 A3 A2 40 00 D4 A4 40 00
+.  Ã  l  .  Ã  .  á    .  .  .  .  .  .  .  .  @  r  í    .  .  .  .  .  .  .  .  v  6  -  ˘
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  Ò  ø  Ö    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+Ÿ  .  .  .  .  s  @  .  a  ∆  @  .  ¢  «  @  .  á  ¯  F  .  .  ˆ  F  .  °  Û  F  .  '  r  a  .
+Ò  }     u  Í  º  …  u  ¸  r  a  .  f  ∂  `  .  .  .  .  .  .  .  .  .  ∆  r  @  .  ¸  »  @  .
+)  ≈  @  .  P  é  A  .  ¢  «  @  .  á  ¯  F  .  ·  Û  F  .  ~  Û  F  .  .  Ñ  @  .  .  l  a  .
+.  Ñ  @  .  .  .  .  .  .  .  .  .  |  I  –  p  Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  É  ∂  /  è  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  Ò     Ö  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ÿ  .  .  .  ™  r  @  .  £  ¢  @  .  ‘  §  @  .
+
+--------------------------------2023/7/19 9:17:44--------------------------------
+A memory block has been leaked. The size is: 52
+
+This block was allocated by thread 0x608, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+40A2A3 [System.pas][System][@NewUnicodeString$qqri][25168]
+40A4D4 [System.pas][System][@UStrFromPWCharLen$qqrr20System.UnicodeStringpbi][25846]
+55AE8B [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6308]
+6CDD77 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDEEE [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnNomeCompletoClick][81]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+67683D [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.Click][1551]
+676827 [Vcl.Buttons.pas][Vcl.Buttons][Buttons.TSpeedButton.MouseUp][1544]
+55D0B9 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.DoMouseUp][7664]
+55D147 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.WMLButtonUp][7677]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 4002
+
+Current memory dump of 256 bytes starting at pointer address 7F871FC0:
+B0 04 02 00 01 00 00 00 0D 00 00 00 64 00 73 00 61 00 64 00 73 00 61 00 20 00 64 00 73 00 61 00
+64 00 61 00 73 00 00 00 46 64 84 A3 80 80 80 80 80 80 80 80 80 80 80 80 00 00 00 00 C1 20 87 7F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3B 0C 00 00 AA 72 40 00 FF 82 40 00 9A 8A 40 00
+A6 5C 53 00 A5 11 47 00 17 10 47 00 2F 1D 69 00 F2 12 47 00 6A A1 47 00 9F B5 47 00 BE B0 47 00
+08 06 00 00 08 06 00 00 C6 72 40 00 1D 83 40 00 E5 8A 40 00 26 5D 53 00 13 84 40 00 1F 1E 69 00
+13 84 40 00 29 14 47 00 13 84 40 00 16 41 69 00 F9 E3 55 00 2C 00 00 00 C8 F7 52 00 4A 28 4A 86
+84 5C 6E 00 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80
+80 80 80 80 80 80 80 80 80 80 80 80 B5 D7 B5 79 80 80 80 80 80 80 80 80 00 00 00 00 81 21 87 7F
+∞  .  .  .  .  .  .  .  .  .  .  .  d  .  s  .  a  .  d  .  s  .  a  .     .  d  .  s  .  a  .
+d  .  a  .  s  .  .  .  F  d  Ñ  £  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  ¡     á  
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ;  .  .  .  ™  r  @  .  ˇ  Ç  @  .  ö  ä  @  .
+¶  \  S  .  •  .  G  .  .  .  G  .  /  .  i  .  Ú  .  G  .  j  °  G  .  ü  µ  G  .  æ  ∞  G  .
+.  .  .  .  .  .  .  .  ∆  r  @  .  .  É  @  .  Â  ä  @  .  &  ]  S  .  .  Ñ  @  .  .  .  i  .
+.  Ñ  @  .  )  .  G  .  .  Ñ  @  .  .  A  i  .  ˘  „  U  .  ,  .  .  .  »  ˜  R  .  J  (  J  Ü
+Ñ  \  n  .  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä
+Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  µ  ◊  µ  y  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  Å  !  á  
+
+--------------------------------2023/7/19 9:17:44--------------------------------
+A memory block has been leaked. The size is: 20
+
+This block was allocated by thread 0x608, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+40A2A3 [System.pas][System][@NewUnicodeString$qqri][25168]
+40A730 [System.pas][System][@UStrAsg$qqrr20System.UnicodeStringx20System.UnicodeString][26152]
+471A0C [System.Classes.pas][System.Classes][Classes.TStrings.Create][6372]
+474521 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7679]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CD726 [uControllerPessoa.pas][uControllerPessoa][TControllerPessoa.getPessoaFisica][28]
+55AEA2 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6311]
+6CDD89 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDEEE [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnNomeCompletoClick][81]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+
+The block is currently used for an object of class: UnicodeString
+
+The allocation number is: 4005
+
+Current memory dump of 256 bytes starting at pointer address 7F8EF290:
+B0 04 02 00 01 00 00 00 02 00 00 00 0D 00 0A 00 00 00 B0 44 CE 78 80 80 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+∞  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ∞  D  Œ  x  Ä  Ä  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+
+--------------------------------2023/7/19 9:17:44--------------------------------
+A memory block has been leaked. The size is: 84
+
+This block was allocated by thread 0x608, and the stack trace (return addresses) at the time was:
+4072AA [System.pas][System][@GetMem$qqri][4791]
+4082FF [System.pas][System][TObject.NewInstance][17386]
+408A9A [System.pas][System][@ClassCreate$qqrpvzc][18765]
+474514 [System.Classes.pas][System.Classes][Classes.TStringList.Create][7678]
+408308 [System.pas][System][TObject.NewInstance][17386]
+6CCDD8 [uPessoaFisica.pas][uPessoaFisica][TPessoaFisica.Create][28]
+6CD726 [uControllerPessoa.pas][uControllerPessoa][TControllerPessoa.getPessoaFisica][28]
+55AEA2 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.GetText][6311]
+6CDD89 [uViewPessoa.pas][uViewPessoa][TfrmPessoa.setDadosPessoaFisica][64]
+6CDEEE [uViewPessoa.pas][uViewPessoa][TfrmPessoa.btnNomeCompletoClick][81]
+55CC89 [Vcl.Controls.pas][Vcl.Controls][Controls.TControl.Click][7536]
+
+The block is currently used for an object of class: System.Classes.TStringList
+
+The allocation number is: 4004
+
+Current memory dump of 256 bytes starting at pointer address 7F927240:
+A0 A1 44 00 00 00 00 00 F0 B7 93 7F 9C F2 8E 7F 00 00 00 00 00 00 00 00 2C 00 22 00 3D 00 0E 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 72 E4 71 79 80 80 80 80 80 80 80 80 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+†  °  D  .  .  .  .  .    ∑  ì    ú  Ú  é    .  .  .  .  .  .  .  .  ,  .  "  .  =  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  r  ‰  q  y  Ä  Ä  Ä  Ä  Ä  Ä  Ä  Ä  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+
+--------------------------------2023/7/19 9:17:44--------------------------------
+This application has leaked memory. The small block leaks are (excluding expected leaks registered by pointer):
+
+13 - 20 bytes: UnicodeString x 1
+21 - 36 bytes: uPessoaFisica.TPessoaFisica x 1
+37 - 52 bytes: UnicodeString x 1
+69 - 84 bytes: System.Classes.TStringList x 1
+
+Note: Memory leak detail is logged to a text file in the same folder as this application. To disable this memory leak check, undefine "EnableMemoryLeakReporting".

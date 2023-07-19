@@ -12,6 +12,8 @@ type
     procedure ValidarValor(const pValor : Integer; const pMensagem : string); overload;
     procedure ValidarValor(const pValor : Currency; const pMensagem : string); overload;
     procedure ValidarValor(const pCondicao : Boolean; const pMensagem : string); overload;
+  public
+    procedure setNilObjeto(var Obj);
   end;
 
 implementation
@@ -31,6 +33,11 @@ end;
 procedure TBaseClass.ValidarValor(const pValor: Currency; const pMensagem: string);
 begin
   Assert(pValor > 0, pMensagem);
+end;
+
+procedure TBaseClass.setNilObjeto(var Obj);
+begin
+  FreeAndNil(Obj);
 end;
 
 procedure TBaseClass.ValidarValor(const pCondicao: Boolean; const pMensagem: string);

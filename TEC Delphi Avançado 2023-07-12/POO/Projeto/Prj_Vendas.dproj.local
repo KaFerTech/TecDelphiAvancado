@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/06/28 09:37:00.000.608,=C:\Users\jordelino.santos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/28 09:39:06.000.344,C:\Users\jordelino.santos\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewVendas.dfm</Transaction>
+    <Transaction>2023/06/28 09:39:06.000.344,C:\Users\jordelino.santos\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewVendas.pas</Transaction>
+    <Transaction>2023/06/28 09:39:37.000.889,C:\Users\jordelino.santos\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Prj_Vendas.dproj</Transaction>
+    <Transaction>2023/06/28 10:14:42.000.062,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/06/28 10:16:04.000.680,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Data Module\udmVendas.pas</Transaction>
+    <Transaction>2023/06/28 10:16:04.000.680,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.dfm=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Data Module\udmVendas.dfm</Transaction>
+    <Transaction>2023/06/28 11:33:16.000.103,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/06/28 11:33:51.000.702,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uCliente.pas</Transaction>
+    <Transaction>2023/06/28 11:39:26.000.716,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/06/28 11:39:46.000.656,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.dfm=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewPOOExemplo.dfm</Transaction>
+    <Transaction>2023/06/28 11:39:46.000.656,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewPOOExemplo.pas</Transaction>
+    <Transaction>2023/07/05 09:22:07.000.070,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 09:24:31.000.814,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uItemVenda.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 09:40:23.000.323,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 09:43:51.000.707,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uBaseClass.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 10:42:04.000.110,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 10:42:18.000.052,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uPessoa.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:02:33.000.382,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:03:28.000.285,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uPessoaFisica.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:28:28.000.530,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:29:47.000.703,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uPessoaJuridica.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:46:07.000.414,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:46:28.000.568,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uMascarasDocumento.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 08:14:42.000.323,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 08:14:56.000.180,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.dfm=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewPessoa.dfm</Transaction>
+    <Transaction>2023/07/12 08:14:56.000.180,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewPessoa.pas</Transaction>
+    <Transaction>2023/07/12 09:21:12.000.959,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 09:22:24.000.798,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit2.pas</Transaction>
+    <Transaction>2023/07/12 10:00:36.000.390,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 10:03:44.000.678,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uBibliotecaFuncoes.pas</Transaction>
+    <Transaction>2023/07/12 11:03:52.000.417,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 11:05:32.000.815,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uProduto.pas</Transaction>
+    <Transaction>2023/07/12 11:05:46.000.952,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 11:06:41.000.951,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Class\uProduto2.pas</Transaction>
+    <Transaction>2023/07/12 11:07:09.000.475,=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 11:07:57.000.661,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.dfm=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewClassesAmigas.dfm</Transaction>
+    <Transaction>2023/07/12 11:07:57.000.661,C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\Projeto\Unit1.pas=C:\Users\jordelino.santos\Desktop\TEC Delphi Avançado 2023\POO\View\uViewClassesAmigas.pas</Transaction>
+  </Transactions>
+</BorlandProject>

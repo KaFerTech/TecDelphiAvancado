@@ -2,34 +2,36 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2023/06/28 09:15:03.000.035,=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/06/28 09:38:50.000.067,C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.pas</Transaction>
-    <Transaction>2023/06/28 09:38:50.000.067,C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.dfm</Transaction>
-    <Transaction>2023/06/28 09:39:34.000.042,C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Prj_Vendas.dproj</Transaction>
-    <Transaction>2023/06/28 09:39:48.000.335,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewVendas.pas</Transaction>
-    <Transaction>2023/06/28 09:39:48.000.335,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewVendas.dfm</Transaction>
+    <Transaction>2023/06/28 09:38:50.000.067,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.dfm=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/06/28 09:38:50.000.067,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.pas=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/28 09:39:34.000.042,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Prj_Vendas.dproj=C:\Users\kaique.fernandes\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/06/28 09:39:48.000.335,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewVendas.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.dfm</Transaction>
+    <Transaction>2023/06/28 09:39:48.000.335,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewVendas.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPrincipal.pas</Transaction>
     <Transaction>2023/06/28 10:16:16.000.544,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/06/28 10:19:02.000.350,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Data Module\unDmVendas.pas</Transaction>
-    <Transaction>2023/06/28 10:19:02.000.350,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Data Module\unDmVendas.dfm</Transaction>
+    <Transaction>2023/06/28 10:19:02.000.350,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Data Module\unDmVendas.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.dfm</Transaction>
+    <Transaction>2023/06/28 10:19:02.000.350,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Data Module\unDmVendas.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
     <Transaction>2023/06/28 11:35:19.000.884,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/06/28 11:35:39.000.412,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uCliente.pas</Transaction>
+    <Transaction>2023/06/28 11:35:39.000.412,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uCliente.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
     <Transaction>2023/07/05 09:21:08.000.251,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 09:21:28.000.364,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uItensVenda.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 09:21:28.000.364,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uItensVenda.pas</Transaction>
     <Transaction>2023/07/05 09:40:25.000.138,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 09:43:59.000.896,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uBaseClass.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 09:43:59.000.896,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uBaseClass.pas</Transaction>
     <Transaction>2023/07/05 10:41:06.000.666,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 10:41:21.000.822,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoa.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 10:41:21.000.822,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoa.pas</Transaction>
     <Transaction>2023/07/05 11:03:24.000.542,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 11:03:37.000.752,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoaFisica.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:03:37.000.752,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoaFisica.pas</Transaction>
     <Transaction>2023/07/05 11:23:57.000.000,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 11:24:12.000.888,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoaJuridica.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:24:12.000.888,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uPessoaJuridica.pas</Transaction>
     <Transaction>2023/07/05 11:46:16.000.038,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 11:46:29.000.622,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\uMascarasDocumento.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:46:29.000.622,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\uMascarasDocumento.pas</Transaction>
     <Transaction>2023/07/05 11:52:57.000.354,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 11:57:56.000.763,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPessoa.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/05 11:57:56.000.763,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPessoa.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.dfm</Transaction>
-    <Transaction>2023/07/12 08:38:16.000.582,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uItensVenda.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uItemVenda.pas</Transaction>
-    <Transaction>2023/07/12 10:21:25.848,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
-    <Transaction>2023/07/12 10:21:45.408,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uBibliotecaFuncoes.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/05 11:57:56.000.763,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPessoa.pas</Transaction>
+    <Transaction>2023/07/05 11:57:56.000.763,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.dfm=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\View\uViewPessoa.dfm</Transaction>
+    <Transaction>2023/07/12 08:38:16.000.582,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uItemVenda.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uItensVenda.pas</Transaction>
+    <Transaction>2023/07/12 10:21:25.000.848,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/12 10:21:45.000.408,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uBibliotecaFuncoes.pas</Transaction>
+    <Transaction>2023/07/19 08:59:14.800,=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/07/19 08:59:40.888,C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Class\uControllerPessoa.pas=C:\Users\kaique.fernandes\Documents\GitHub\TecDelphiAvancado\POO\Projeto\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="..\..\POO"/>
@@ -41,6 +43,7 @@
     <File Path="..\Class\uPessoaFisica.pas"/>
     <File Path="..\Class\uPessoaJuridica.pas"/>
     <File Path="..\Class\uBibliotecaFuncoes.pas"/>
+    <File Path="..\Class\uControllerPessoa.pas"/>
     <File Path="..\Data Module"/>
     <File Path="..\Data Module\unDmVendas.pas"/>
     <File Path="..\Data Module\unDmVendas.dfm"/>

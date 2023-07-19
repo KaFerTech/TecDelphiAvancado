@@ -9,7 +9,8 @@ type
   TPessoaJuridica = class(TPessoa)
   private
     fCNPJ: string;
-    function getCNPJ : string;
+
+    function getCNPJ: string;
   public
     property CNPJ : string read getCNPJ;
 
@@ -19,11 +20,12 @@ type
 
 implementation
 
-{ TPessoaJuridica }
-
 function TPessoaJuridica.DadosCompletos: string;
 begin
-  Result := 'Nome da empresa: ' + Nome + ' - ' + CNPJ;
+  Result := sLineBreak +
+            'Nome da empresa: ' + Nome + sLineBreak +
+            'CNPJ: ' + CNPJ + sLineBreak +
+            'Endereço: ' + Endereco;
 end;
 
 function TPessoaJuridica.DocumentoFormatado(const pDocumento : string): string;
@@ -34,10 +36,9 @@ end;
 function TPessoaJuridica.getCNPJ: string;
 begin
   ValidarValor(Documento.Trim.Length <> 14, 'CNPJ inválido.');
-
   fCNPJ := DocumentoFormatado(Documento);
 
-  Result := fCNPJ
+  Result := fCNPJ;
 end;
 
 end.

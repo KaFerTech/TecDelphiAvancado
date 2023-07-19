@@ -1,0 +1,41 @@
+unit uControllerPessoa;
+
+interface
+
+uses
+  uPessoaFisica,
+  uPessoaJuridica;
+
+type
+  TControllerPessoa = class // Controller Factory - abstract factory
+  private
+    fPessoaFisica : TPessoaFisica;
+    fPessoaJuridica : TPessoaJuridica;
+    function getPessoaFisica: TPessoaFisica;
+    function getPessoaJuridica: TPessoaJuridica;
+  public
+    property PessoaFisica : TPessoaFisica read getPessoaFisica;
+    property PessoaJuridica : TPessoaJuridica read getPessoaFisica;
+  end;
+
+implementation
+
+{ TControllerPessoa }
+
+function TControllerPessoa.getPessoaFisica: TPessoaJuridica;
+begin
+  if fPessoaFisica = nil then
+    fPessoaFisica := TPessoaFisica.Create;
+
+    Result := fPessoaFisica;
+end;
+
+function TControllerPessoa.getPessoaJuridica: TPessoaJuridica;
+begin
+  if fPessoaJuridica = nil then
+    fPessoaJuridica := TPessoaJuridica.Create;
+
+  Result := fPessoaJuridica;
+end;
+
+end.
